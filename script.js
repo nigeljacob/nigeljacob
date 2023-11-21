@@ -18,12 +18,16 @@ function changeScrollStart() {
     if(windowHeight > 900) {
         scrollStart = 1200;
     } else if(windowHeight > 700 && windowHeight < 900) {
-        scrollStart = 1250;
+        scrollStart = 1125;
     } else if (windowHeight > 500 && windowHeight < 700) {
-        scrollStart = 1300;
+        scrollStart = 1050;
+    } else if (windowHeight > 200 && windowHeight < 500) {
+        scrollStart = 975;
     } else {
-        scrollStart = 1450;
+        scrollStart = 900;
     }
+
+    console.log(windowHeight);
 
     if(windowWidth > 1600) {
         nameFont = 200;
@@ -76,9 +80,13 @@ document.addEventListener('scroll', function() {
         }, 100)
     } else {
         name2.style.opacity = scrollTop/1000;
-    }
+    } 
+
     name2.style.fontSize = nameFont2 + scrollTop / 20 + "px";
-    name.style.fontSize = nameFont + scrollTop / 20 + "px";
+
+    if(name.style.opacity > 0) {
+        name.style.fontSize = nameFont + scrollTop / 20 + "px";
+    }
     scroll = scrollTop;
 
     if(scrollTop > scrollStart) {

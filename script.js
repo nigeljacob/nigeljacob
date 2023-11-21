@@ -18,13 +18,13 @@ function changeScrollStart() {
     if(windowHeight > 900) {
         scrollStart = 1200;
     } else if(windowHeight > 700 && windowHeight < 900) {
-        scrollStart = 1125;
-    } else if (windowHeight > 500 && windowHeight < 700) {
         scrollStart = 1050;
-    } else if (windowHeight > 200 && windowHeight < 500) {
-        scrollStart = 975;
-    } else {
+    } else if (windowHeight > 500 && windowHeight < 700) {
         scrollStart = 900;
+    } else if (windowHeight > 200 && windowHeight < 500) {
+        scrollStart = 750;
+    } else {
+        scrollStart = 600;
     }
 
     console.log(windowHeight);
@@ -179,7 +179,7 @@ document.addEventListener('scroll', function() {
             techSkil4.style.transform = "translateY(50px)";
         }
 
-        if(scrollTop > scrollStart + 3050) {
+        if(scrollTop > scrollStart + 2750) {
             techSkil5.style.opacity = 1;
             techSkil5.style.transform = "translateY(0px)";
         } else {

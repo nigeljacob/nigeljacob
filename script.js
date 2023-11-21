@@ -29,8 +29,8 @@ function changeScrollStart() {
         nameFont = 200;
         nameFont2 = 100;
     } else if(windowWidth > 1300 && windowWidth <= 1600) {
-        nameFont = 180;
-        nameFont2 = 80;
+        nameFont = 160;
+        nameFont2 = 60;
     }
 }
 

@@ -386,6 +386,17 @@ body{
         
     }
 
+    #aboutMeDesc {
+        font-size: 50px;
+        width: 700px;
+    }
+
+    .section2 {
+        height: 800px;
+    }
+
+    
+
     @keyframes fadeIn {
         0%{
             opacity: 0%;
@@ -424,6 +435,15 @@ body{
         font-size: 140px;
         animation: fadeIn 2.5s ease-in;
         
+    }
+
+    #aboutMeDesc {
+        font-size: 40px;
+        width: 600px;
+    }
+
+    .section2 {
+        height: 700px;
     }
 
     @keyframes fadeIn {

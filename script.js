@@ -6,6 +6,59 @@ let gridlayout3 = document.getElementById("gridDiv3");
 let gridlayout4 = document.getElementById("gridDiv4");
 let gridlayout5= document.getElementById("gridDiv5");
 
+let scrollStart = 0;
+var nameFont = 0;
+var nameFont2 = 0;
+
+
+function changeScrollStart() {
+    let windowWidth = window.innerWidth;
+    let windowHeight = window.innerHeight;
+
+    if(windowHeight > 900) {
+        scrollStart = 1200;
+    } else if(windowHeight > 700 && windowHeight < 900) {
+        scrollStart = 1300;
+    } else if (windowHeight > 500 && windowHeight < 700) {
+        scrollStart = 1400;
+    } else {
+        scrollStart = 1500;
+    }
+
+    if(windowWidth > 1600) {
+        nameFont = 200;
+        nameFont2 = 100;
+    } else if(windowWidth > 1300 && windowWidth <= 1600) {
+        nameFont = 180;
+        nameFont2 = 80;
+    }
+}
+
+changeScrollStart();
+
+window.addEventListener('resize', function() {
+    changeScrollStart();
+});
+
+
+// Function to check if an element is starting to come into view from the bottom
+function isElementStartingToEnterFromBottom(el, threshold = 0) {
+    var rect = el.getBoundingClientRect();
+    return rect.top <= (window.innerHeight || document.documentElement.clientHeight) - threshold &&
+           rect.bottom >= threshold;
+}
+
+// Function to get the scroll position of an element when it starts to come into view from the bottom
+function getScrollPositionWhenStartingToEnterFromBottom(elementId, threshold) {
+    var element = document.getElementById(elementId);
+
+    if (element && isElementStartingToEnterFromBottom(element, threshold)) {
+        var scrollPosition = element.getBoundingClientRect().top;
+        return scrollPosition
+    } else {
+        return 0;
+    }
+}
 
 document.addEventListener('scroll', function() {
     let name = document.getElementById("name");
@@ -21,12 +74,11 @@ document.addEventListener('scroll', function() {
     } else {
         name2.style.opacity = scrollTop/1000;
     }
-    name2.style.fontSize = 100 + scrollTop / 20 + "px";
-    name.style.fontSize = 200 + scrollTop / 20 + "px";
+    name2.style.fontSize = nameFont2 + scrollTop / 20 + "px";
+    name.style.fontSize = nameFont + scrollTop / 20 + "px";
     scroll = scrollTop;
-    console.log(scrollTop)
 
-    if(scrollTop > 1200) {
+    if(scrollTop > scrollStart) {
         let p1 = document.getElementById("p1");
         let p2 = document.getElementById("p2");
         let p3 = document.getElementById("p3");
@@ -34,15 +86,15 @@ document.addEventListener('scroll', function() {
         let p5 = document.getElementById("p5");
         let mainDiv = document.getElementById("mainDiv");
 
-        if(scrollTop < 1500) {
+        if(scrollTop < scrollStart + 300) {
             p1.style.opacity = 1;
 
-        } else if (scrollTop > 1500) {
+        } else if (scrollTop > scrollStart + 300) {
             p1.style.opacity = 0.17
             ;
         }
 
-        if(scrollTop < 1750 && scrollTop > 1500) {
+        if(scrollTop < scrollStart + 550 && scrollTop > scrollStart + 300) {
             p2.style.opacity = 1;
 
         } else {
@@ -50,30 +102,30 @@ document.addEventListener('scroll', function() {
             ;
         }
 
-        if(scrollTop < 1900 && scrollTop > 1750) {
+        if(scrollTop < scrollStart + 700 && scrollTop > scrollStart + 550) {
             p3.style.opacity = 1;
         } else {
             p3.style.opacity = 0.17
             ;
         }
 
-        if(scrollTop < 2100 && scrollTop > 1900) {
+        if(scrollTop < scrollStart + 900 && scrollTop > scrollStart + 700) {
             p4.style.opacity = 1;
         } else {
             p4.style.opacity = 0.17
             ;
         }
 
-        if(scrollTop > 2100) {
+        if(scrollTop > scrollStart + 900) {
             p5.style.opacity = 1;
         } else {
             p5.style.opacity = 0.17
             ;
         }
 
-        if(scrollTop > 1800) {
+        if(scrollTop > scrollStart + 600) {
             mainDiv.style.visibility = "hidden";
-        } else if (scrollTop < 1600){
+        } else if (scrollTop < scrollStart + 400){
             mainDiv.style.visibility = "visible";
         }
 
@@ -83,7 +135,8 @@ document.addEventListener('scroll', function() {
         let techSkil4 = document.getElementById("techSkil4");
         let techSkil5 = document.getElementById("techSkil5");
 
-        if(scrollTop > 2650) {
+
+        if(scrollTop > scrollStart + 1500) {
             techSkil1.style.opacity = 1;
             techSkil1.style.transform = "translateY(0px)";
         } else {
@@ -91,7 +144,7 @@ document.addEventListener('scroll', function() {
             techSkil1.style.transform = "translateY(50px)";
         }
 
-        if(scrollTop > 3000) {
+        if(scrollTop > scrollStart + 1850) {
             techSkil2.style.opacity = 1;
             techSkil2.style.transform = "translateY(0px)";
         } else {
@@ -99,7 +152,7 @@ document.addEventListener('scroll', function() {
             techSkil2.style.transform = "translateY(50px)";
         }
 
-        if(scrollTop > 3400) {
+        if(scrollTop > scrollStart + 2250) {
             techSkil3.style.opacity = 1;
             techSkil3.style.transform = "translateY(0px)";
         } else {
@@ -107,7 +160,7 @@ document.addEventListener('scroll', function() {
             techSkil3.style.transform = "translateY(50px)";
         }
 
-        if(scrollTop > 3700) {
+        if(scrollTop > scrollStart + 2550) {
             techSkil4.style.opacity = 1;
             techSkil4.style.transform = "translateY(0px)";
         } else {
@@ -115,7 +168,7 @@ document.addEventListener('scroll', function() {
             techSkil4.style.transform = "translateY(50px)";
         }
 
-        if(scrollTop > 4200) {
+        if(scrollTop > scrollStart + 3150) {
             techSkil5.style.opacity = 1;
             techSkil5.style.transform = "translateY(0px)";
         } else {

@@ -414,5 +414,45 @@ body{
 
 }
 
+@media screen and (max-width: 1300px) {
+
+    #name2{
+        font-size: 40px;
+    }
+
+    #name{
+        font-size: 140px;
+        animation: fadeIn 2.5s ease-in;
+        
+    }
+
+    @keyframes fadeIn {
+        0%{
+            opacity: 0%;
+            font-size: 130px;
+        }
+        70% {
+            opacity: 0%;
+            font-size: 130px;
+    
+    
+        }
+        75%{
+            opacity: 25%;
+        }
+        80%{
+            opacity: 50%;
+            font-size: 130px;
+    
+    
+        }
+        100% {
+            opacity: 100%;
+            font-size: 140px;
+        }
+    }
+
+}
+
  
 

@@ -18,11 +18,11 @@ function changeScrollStart() {
     if(windowHeight > 900) {
         scrollStart = 1200;
     } else if(windowHeight > 700 && windowHeight < 900) {
-        scrollStart = 1300;
+        scrollStart = 1250;
     } else if (windowHeight > 500 && windowHeight < 700) {
-        scrollStart = 1400;
+        scrollStart = 1300;
     } else {
-        scrollStart = 1500;
+        scrollStart = 1450;
     }
 
     if(windowWidth > 1600) {
@@ -31,6 +31,9 @@ function changeScrollStart() {
     } else if(windowWidth > 1300 && windowWidth <= 1600) {
         nameFont = 160;
         nameFont2 = 60;
+    } else {
+        nameFont = 140;
+        nameFont2 = 40;
     }
 }
 

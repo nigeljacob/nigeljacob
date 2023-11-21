@@ -147,7 +147,7 @@ document.addEventListener('scroll', function() {
         let techSkil5 = document.getElementById("techSkil5");
 
 
-        if(scrollTop > scrollStart + 1500) {
+        if(scrollTop > scrollStart + 1400) {
             techSkil1.style.opacity = 1;
             techSkil1.style.transform = "translateY(0px)";
         } else {
@@ -155,7 +155,7 @@ document.addEventListener('scroll', function() {
             techSkil1.style.transform = "translateY(50px)";
         }
 
-        if(scrollTop > scrollStart + 1850) {
+        if(scrollTop > scrollStart + 1750) {
             techSkil2.style.opacity = 1;
             techSkil2.style.transform = "translateY(0px)";
         } else {
@@ -163,7 +163,7 @@ document.addEventListener('scroll', function() {
             techSkil2.style.transform = "translateY(50px)";
         }
 
-        if(scrollTop > scrollStart + 2250) {
+        if(scrollTop > scrollStart + 2150) {
             techSkil3.style.opacity = 1;
             techSkil3.style.transform = "translateY(0px)";
         } else {
@@ -171,7 +171,7 @@ document.addEventListener('scroll', function() {
             techSkil3.style.transform = "translateY(50px)";
         }
 
-        if(scrollTop > scrollStart + 2550) {
+        if(scrollTop > scrollStart + 2450) {
             techSkil4.style.opacity = 1;
             techSkil4.style.transform = "translateY(0px)";
         } else {
@@ -179,7 +179,7 @@ document.addEventListener('scroll', function() {
             techSkil4.style.transform = "translateY(50px)";
         }
 
-        if(scrollTop > scrollStart + 3150) {
+        if(scrollTop > scrollStart + 3050) {
             techSkil5.style.opacity = 1;
             techSkil5.style.transform = "translateY(0px)";
         } else {

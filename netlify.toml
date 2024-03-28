@@ -1,6 +1,6 @@
 [build]
   command = "npm run build" # Or the command to build your React app
-  publish = "build"         # Directory to publish (where your built React app resides)
+  publish = "dist"         # Directory to publish (where your built React app resides)
 
 [dev]
   command = "npm start"     # Command to start your development server (optional)

@@ -1,0 +1,105 @@
+.resumeComponent_right, .resumeComponent_left{
+    opacity: 0;
+    animation: slideIn linear forwards;
+    animation-timeline: view();
+    animation-range-start: 10%;
+    animation-range-end: 30%;
+}
+
+.resumeComponent_right {
+    transform: translateX(100px);
+}
+
+.resumeComponent_left {
+    transform: translateX(-100px);
+}
+
+.component h2 {
+    background: linear-gradient(90deg, rgba(255,2,2,1) 0%, rgba(255,143,0,1) 16%, rgba(241,14,127,1) 37%, rgba(228,24,85,1) 73%, rgba(255,212,212,1) 100%);
+    background-clip: text;
+    color: transparent;
+    font-weight: 900;
+    background-size: 400% 400%;
+    animation: anim 6s infinite;
+}
+
+.component a {
+    color: #000040;
+}
+
+.component a:hover {
+    color: #505050
+}
+
+@keyframes anim {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 50% 100%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.borderCustom_education{
+    border-top: 10px solid orange;
+}
+
+.borderCustom_projects{
+    border-top: 10px solid yellowgreen;
+}
+
+.borderCustom_certifications{
+    border-top: 10px solid cyan;
+}
+
+.borderCustom_achievements{
+    border-top: 10px solid wheat;
+}
+
+.borderCustom_references{
+    border-top: 10px solid palevioletred;
+}
+
+.borderCustom_links{
+    border-top: 10px solid purple;
+}
+
+.resumeTitle {
+    font-size: 25px;
+}
+
+@keyframes slideIn {
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    .resumeComponent_right {
+    transform: translateX(50px);
+}
+
+    .resumeComponent_left {
+        transform: translateX(-50px);
+    }
+}
+
+@media screen and (max-width: 400px){
+    .resumeComponent_right {
+    transform: translateX(15px);
+}
+
+    .resumeComponent_left {
+        transform: translateX(-15px);
+    }
+
+    .resumeTitle{
+        font-size: 25px;
+    }
+}

@@ -1,0 +1,113 @@
+#hi {
+    color: lightgreen;
+    font-weight: 300;
+    overflow: hidden; 
+    border-right: .15em solid orange; 
+    white-space: nowrap; 
+    margin: 0 auto;
+    font-family: monospace;
+    letter-spacing: .15em; 
+    animation: drop 1s ease-in,
+    typing 0.75s steps(90, end),
+    blink-caret .75s step-end infinite;
+    animation: moveOut linear forwards;
+    animation-timeline: view();
+    animation-range-start: 50%;
+}
+
+#name {
+    font-size: 1000%;
+    font-weight: 800;
+    animation: fadeIn 1.5s ease-in;
+    margin-top: 20px;
+    text-align: center;
+    animation: scrollName linear forwards;
+    animation-timeline: view();
+    animation-range-start: 50%;
+}
+
+#title{
+    font-size: 70px;
+    opacity: 0%;
+    animation: scrollTitle linear forwards;
+    animation-timeline: view();
+    animation-range-start: 90%;
+    animation-range-end: 150%;
+}
+
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+  
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+}
+/* Animations */
+@keyframes drop {
+    0%{
+        opacity: 0;
+    }
+    20% {
+        opacity: 100;
+    }
+}
+
+@keyframes scrollName {
+    to{
+        scale: 2;
+        opacity: 0;
+    }
+}
+
+@keyframes scrollTitle {
+    to{
+        scale: 1.5;
+        opacity: 100%;
+    }
+}
+
+@keyframes moveOut {
+    to{
+        opacity: 0;
+    }
+}
+
+@keyframes fadeIn {
+    0%{
+        opacity: 0%;
+        font-size: 950%;
+    }
+    70% {
+        opacity: 0%;
+        font-size: 950%;
+
+
+    }
+    75%{
+        opacity: 25%;
+    }
+    80%{
+        opacity: 50%;
+        font-size: 950%;
+
+
+    }
+    100% {
+        opacity: 100%;
+        font-size: 1000%;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    #name{
+        font-size: 500%;
+    }
+
+    #title {
+        font-size: 50px;
+    }
+}

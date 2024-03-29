@@ -36,7 +36,7 @@ function App() {
 
       <div className="w-screen h-[200px] bg-black"></div>
 
-      <Projects />
+      {/* <Projects /> */}
     </>
   );
 }

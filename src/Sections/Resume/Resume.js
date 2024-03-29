@@ -123,7 +123,7 @@ export const ResumeData = [
             {
                 title: "MS. RASHMI PERERA",
                 timeline: "",
-                description: "Informatics Institute of Technology\nAssistant Lecturer - School of Computing\n+ 94 76 916 3517\nrashmi.p@iit.ac.lk",
+                description: "Informatics Institute of Technology\nAssistant Lecturer\n+ 94 76 916 3517\nrashmi.p@iit.ac.lk",
                 link: "mailto:rashmi.p@iit.ac.lk"
             }
         ],

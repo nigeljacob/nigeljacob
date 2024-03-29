@@ -90,6 +90,16 @@
     }
 }
 
+@media screen and (max-width: 600px){
+    .resumeComponent_right {
+    transform: translateX(15px);
+}
+
+    .resumeComponent_left {
+        transform: translateX(-15px);
+    }
+}
+
 @media screen and (max-width: 400px){
     .resumeComponent_right {
     transform: translateX(15px);

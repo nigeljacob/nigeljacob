@@ -58,6 +58,22 @@
     .title{
         width: 90%;
     }
+
+    .gridLayout{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .title h1 {
+        font-size: 45px;
+    }
+
+    .title h3 {
+        font-size: 18px;
+        margin-left: 0px;
+    }
 }
 
 @media screen and (max-width: 400px){

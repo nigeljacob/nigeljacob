@@ -10,9 +10,11 @@
     animation: drop 1s ease-in,
     typing 0.75s steps(90, end),
     blink-caret .75s step-end infinite;
+    user-select: none;
+    /* -webkit-animation: moveOut linear forwards;
     animation: moveOut linear forwards;
     animation-timeline: view();
-    animation-range-start: 50%;
+    animation-range-start: 50%; */
 }
 
 #name {
@@ -21,18 +23,22 @@
     animation: fadeIn 1.5s ease-in;
     margin-top: 20px;
     text-align: center;
+    user-select: none;
+    /* -webkit-animation: scrollName linear forwards;
     animation: scrollName linear forwards;
     animation-timeline: view();
-    animation-range-start: 50%;
+    animation-range-start: 50%; */
 }
 
 #title{
-    font-size: 70px;
+    font-size: 50px;
     opacity: 0%;
+    user-select: none;
+    /* -webkit-animation: scrollTitle linear forwards;
     animation: scrollTitle linear forwards;
     animation-timeline: view();
     animation-range-start: 90%;
-    animation-range-end: 150%;
+    animation-range-end: 150%; */
 }
 
 
@@ -102,12 +108,80 @@
     }
 }
 
+@keyframes fadeIn_medium {
+    0%{
+        opacity: 0%;
+        font-size: 450%;
+    }
+    70% {
+        opacity: 0%;
+        font-size: 450%;
+
+
+    }
+    75%{
+        opacity: 25%;
+    }
+    80%{
+        opacity: 50%;
+        font-size: 450%;
+
+
+    }
+    100% {
+        opacity: 100%;
+        font-size: 500%;
+    }
+}
+
+@keyframes fadeIn_small {
+    0%{
+        opacity: 0%;
+        font-size: 250%;
+    }
+    70% {
+        opacity: 0%;
+        font-size: 250%;
+
+
+    }
+    75%{
+        opacity: 25%;
+    }
+    80%{
+        opacity: 50%;
+        font-size: 250%;
+
+
+    }
+    100% {
+        opacity: 100%;
+        font-size: 300%;
+    }
+}
+
 @media screen and (max-width: 1000px){
     #name{
         font-size: 500%;
+        animation: fadeIn_medium 1.5s ease-in;
     }
 
     #title {
         font-size: 50px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    #name{
+        font-size: 300%;
+        animation: fadeIn_small 1.5s ease-in;
+    }
+
+    #title {
+        font-size: 30px;
+    }
+
+    #hi {
+        font-size: 60%;
     }
 }

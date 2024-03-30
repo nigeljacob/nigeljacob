@@ -8,16 +8,13 @@
 }
 
 .scroll-reveal span {
-    color: hsl(0 0% 100% / 0.2);
-    background-clip: text;
-    background-size: 0% 100%;
-    background-repeat: no-repeat;
-    background-image: linear-gradient(90deg, #A7A7A7, white);
-    animation: scrollAnimation-on linear forwards;
-    animation-timeline: view();
+    opacity: 0.1;
+    transition: all 0.4s;
+    /* animation: scrollAnimation-on linear forwards;
+    animation-timeline: view(); */
 }
 
-#p1{
+/* #p1{
     animation-range-start: 10vh;
     animation-range-end: 50vh;
 }
@@ -40,7 +37,7 @@
 #p5{
     animation-range-start: 110vh;
     animation-range-end: 150vh;
-}
+} */
 
 
 
@@ -74,6 +71,7 @@
 
 @media screen and (max-width: 400px){
     #aboutMeDesc{
-        font-size: 33px;
+        font-size: 30px;
+        text-align: center;
     }
 }

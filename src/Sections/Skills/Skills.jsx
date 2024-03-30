@@ -4,6 +4,9 @@ import SkillComponent from "../../Components/SkillComponent";
 import "./Skills.css";
 
 const Skills = () => {
+
+  
+
   return (
     <div className="h-fit w-screen bg-black flex flex-col justify-center">
       <div className="m-auto title">

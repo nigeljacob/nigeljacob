@@ -12,17 +12,28 @@ const Introduction = () => {
         const handleScroll = () => {
         const maxScroll = document.body.clientHeight - window.innerHeight;
         const scrollFraction = window.scrollY / maxScroll;
+        const screenHeight = window.innerHeight;
 
-        if((1 - scrollFraction * 2.5) > -0.1) {
-            setNameScale(1 + scrollFraction * 1);
-            setNameOpacity(1 - scrollFraction * 5);
+        const hi = document.getElementById('hi');
+        const name = document.getElementById("name");
+        const title = document.getElementById("title");
+
+        const namePosition = name.getBoundingClientRect().top;
+
+        if(1 - scrollFraction * 15 >= 0) {
+            setNameScale(1 + scrollFraction * 10);
+            setNameOpacity(1 - scrollFraction * 15);
+            hi.style.opacity = 1;
+
         } else {
             setNameOpacity(0);
+            hi.style.opacity = 0;
         }
 
-        if((1 - scrollFraction * 5) < 0.2 && (1 - scrollFraction * 2.5) > -0.45){
-            setTitleOpacity(scrollFraction * 3.5);
-            setTitleScale(1 + scrollFraction * 1);
+        if(1 - scrollFraction * 15 <= 0.2) {
+            hi.style.opacity = 0;
+            setTitleOpacity(scrollFraction * 10);
+            setTitleScale(1 + scrollFraction * 5);
         } else {
             setTitleOpacity(0);
         }
@@ -44,6 +55,7 @@ const Introduction = () => {
         </div>
         <h1
           id="name"
+          style={{ opacity: nameOpacity, transform: `scale(${nameScale})` }}
         >
           Nigel Jacob
         </h1>
@@ -53,6 +65,7 @@ const Introduction = () => {
         <h1
           id="title"
           className="gochi-hand-regular"
+          style={{ opacity: titleOpacity, transform: `scale(${titleScale})` }}
         >
           Full Stack <br></br> Developer
         </h1>

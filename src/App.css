@@ -11,6 +11,14 @@
 .fade_in {
   opacity: 0;
   animation: fade_in 1s ease-in-out;
+  touch-action: none;
+}
+
+@media screen and (max-width: 1000px){
+    .fade_in {
+      user-select: none;
+      touch-action: none;
+    }
 }
 
 @keyframes fade_in {

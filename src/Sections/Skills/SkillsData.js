@@ -76,6 +76,10 @@ export const SkillsData = [
                     {
                         SkillName: "Express.js",
                         Icon: "Express"
+                    },
+                    {
+                        SkillName: "Flask",
+                        Icon: "Flask"
                     }
                 ]
             }, 

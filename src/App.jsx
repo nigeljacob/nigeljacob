@@ -5,7 +5,7 @@ import Description from "./Sections/Description/Description";
 import Skills from "./Sections/Skills/Skills";
 import Particles from "./Components/Particles";
 import ResumeSection from "./Sections/Resume/Resume.jsx";
-import Projects from "./Sections/Projects/Projects";
+import Projects from "./Sections/Projects/Projects.jsx";
 
 function App() {
   return (
@@ -37,7 +37,7 @@ function App() {
 
       <div className="w-screen h-[200px] bg-black"></div>
 
-      {/* <Projects /> */}
+      <Projects />
     </>
   );
 }

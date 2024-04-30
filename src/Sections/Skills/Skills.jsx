@@ -1,11 +1,9 @@
-import React from "react";
+import React, {useEffect} from "react";
 import { SkillsData } from "./SkillsData";
 import SkillComponent from "../../Components/SkillComponent";
 import "./Skills.css";
 
 const Skills = () => {
-
-  
 
   return (
     <div className="h-fit w-screen bg-black flex flex-col justify-center">
@@ -28,7 +26,10 @@ const Skills = () => {
                 </h2>
                 {skill.skillSet.map((sets, index) => {
                   return (
-                    <div className="mt-[20px] font-mono text-[20px] fadeIn">
+                    <div
+                    id="element"
+                      className="mt-[20px] font-mono text-[20px] fadeIn"
+                    >
                       {sets.setName != "" && sets.setName}
 
                       <div className="gridLayout mb-[40px]">

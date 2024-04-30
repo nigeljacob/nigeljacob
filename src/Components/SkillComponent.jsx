@@ -37,6 +37,10 @@ const SkillComponent = (props) => {
         return <TBIcons.TbBrandKotlin className="icon text-[#B125EA]" />;
       case "Dart":
         return <DIIcons.DiDart className="icon text-[#42A5F5]" />;
+      case "Spring Boot":
+        return <SIIcons.SiSpringboot className="icon text-[#43e456]" />;
+      case "Express":
+        return <SIIcons.SiExpress className="icon text-[#68A063]" />;
       case "MongoDB":
         return <DIIcons.DiMongodb className="icon text-[#4DB33D]" />;
       case "MySQL":

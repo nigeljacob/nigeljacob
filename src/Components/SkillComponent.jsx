@@ -99,7 +99,7 @@ const SkillComponent = (props) => {
   };
 
   return (
-    <div className="w-[150px] h-[150px] min-h-[150px] min-w-[150px] bg-[#111111] flex flex-col justify-center items-center gridElement">
+    <div className="w-[150px] h-[150px] min-h-[150px] min-w-[150px] bg-[#111111] flex flex-col justify-center items-center gridElement rounded-[10px]">
       {renderIcon(props.icon)}
       <h3 className="mt-[20px] text-[18px] font-sans">{props.name}</h3>
     </div>

@@ -38,7 +38,7 @@ export const ResumeData = [
                 link: "https://sites.google.com/view/synk/home?authuser=0"
             },
             {
-                title: "GAMEZ",
+                title: "GAMEZ - (Private Repository)",
                 timeline: "2024",
                 description: "An android Quiz application where you guess countries from their flags. Test your knowledge, learn new flags, and challenge your friends!",
                 link: "https://github.com/nigeljacob/GAMEZ"

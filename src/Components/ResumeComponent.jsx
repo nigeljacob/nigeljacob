@@ -88,7 +88,7 @@ const ResumeComponent = (props) => {
                       {props.title === "References" ? (
                         <pre className="font-sans">{data.description}</pre>
                       ) : (
-                        <p>{data.description}</p>
+                        <p >{data.description}</p>
                       )}
                     </div>
                   );

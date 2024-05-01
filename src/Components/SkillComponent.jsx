@@ -43,6 +43,8 @@ const SkillComponent = (props) => {
         return <SIIcons.SiExpress className="icon text-[#68A063]" />;
       case "Flask":
         return <SIIcons.SiFlask className="icon text-[#ffffff]" />;
+      case "Go":
+        return <SIIcons.SiGo className="icon text-[#00ADD8]" />;
       case "MongoDB":
         return <DIIcons.DiMongodb className="icon text-[#4DB33D]" />;
       case "MySQL":

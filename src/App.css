@@ -14,6 +14,56 @@
   touch-action: none;
 }
 
+.projectImagesWidth{
+  max-width: calc(100vw - 100px);
+}
+
+.animateIn {
+  animation: animateIn 0.2s ease-in-out;
+}
+
+.journeyWidth {
+  width: calc(100vw - 430px);
+}
+
+.linearWhite {
+  background: linear-gradient(to right, #fff, #444);
+  opacity: 60%;
+}
+
+.bubble {
+  position: absolute;
+  background-color: #3498db;
+  color: #fff;
+  border-radius: 50%;
+  padding: 10px;
+  animation: bubbleAnimation 5s ease-in-out infinite;
+}
+
+@keyframes bubbleAnimation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes animateIn {
+  0% {
+    opacity: 0;
+    scale: 0.5;
+  }
+  100% {
+    opacity: 1;
+    scale: 1;
+  }
+
+}
+
 @media screen and (max-width: 1000px){
     .fade_in {
       user-select: none;

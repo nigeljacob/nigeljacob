@@ -32,6 +32,18 @@ export const ResumeData = [
         title: "Projects",
         content: [
             {
+                title: "Virtual Theater",
+                timeline: "Ongoing",
+                description: "A WEB Application built using react to help connect friends together online to watch a movie ",
+                link: "https://github.com/nigeljacob/virtual_theater"
+            },
+            {
+                title: "Spotify Clone",
+                timeline: "Ongoing",
+                description: "A Desktop and Web Application clone of the original Spotify providing features to listen to music and create playlists.",
+                link: "https://github.com/nigeljacob/spotify"
+            },
+            {
                 title: "PROJECT SYNK",
                 timeline: "2024",
                 description: "A desktop application built using react combined with electron framework that would help team leaders and project managers to keep their team on track. Advanced progress tracking, file version tracking and real time progress provided by the application would enable a team leader to always know what the member is working on.",

@@ -1,27 +1,25 @@
 /* eslint-disable react-hooks/rules-of-hooks */
-/* eslint-disable react/jsx-key */
 /* eslint-disable no-unused-vars */
-import React, { useState } from "react";
-import { ProjectsData } from "./ProjectsData";
-import "./Projects.css";
-import { Link } from "react-router-dom";
+import React, { useState } from 'react'
+import { Certificates } from './Certificates';
+import { Link } from 'react-router-dom';
 
-const Projects = () => {
-
+const Certifications = () => {
   return (
     <div className="w-screen h-fit bg-black flex flex-col justify-center">
       <div className="title m-auto">
         <h1 className="poppins-extrabold text-[70px] text-[lightcoral] textSize">
-          PROJECTS WORKED ON
+          LICENSE & CERTIFICATIONS
         </h1>
         <h3 className="text-[20px] mt-[5px]">
-          As a software developer, I have worked on a variety of projects,
-          utilizing different technologies and frameworks.
+          As a student, I have made a lot of commitments to continuous learning
+          and professional development through various certifications and
+          training programs.
         </h3>
       </div>
 
       <div className="title m-auto projectsGridLayout mt-[30px] max-w-[80%] fadeIn">
-        {ProjectsData.map((item, index) => {
+        {Certificates.map((item, index) => {
           const [isHovering, setHovering] = useState(false);
 
           const handleMouseEnter = () => {
@@ -41,12 +39,13 @@ const Projects = () => {
               onMouseEnter={handleMouseEnter}
               onMouseLeave={handleMouseLeave}
               className="min-w-[250px] rounded-[20px] h-[150px] flex flex-col justify-center items-center parent bg-[#232323]"
+              key={index}
             >
               <div className={className}>
-                <div className="w-[60px] h-[60px] rounded-[10px] z-10">
+                <div className="h-[70px] rounded-[10px] z-10">
                   <img
                     src={item.image}
-                    className="w-[60px] h-[60px] rounded-[10px] z-10"
+                    className="h-[70px] rounded-[5px] z-10"
                   />
                 </div>
                 <h4 className="poppins-bold mt-[10px] text-[15px] z-10">
@@ -55,13 +54,14 @@ const Projects = () => {
               </div>
 
               {isHovering && (
-                <Link
-                  to={"/" + item.premalink}
-                  state={{ Project: item }}
+                <button
                   className="text-[lightcoral] py-[5px] px-[10px] rounded-[10px] mt-[10px] absolute bottom-0 mb-[10px] z-20 font-bold drop-up"
+                  onClick={(event) => {
+                    window.open(item.link);
+                  }}
                 >
-                  <button>View Project</button>
-                </Link>
+                  View Certificate
+                </button>
               )}
             </div>
           );
@@ -69,6 +69,6 @@ const Projects = () => {
       </div>
     </div>
   );
-};
+}
 
-export default Projects;
+export default Certifications

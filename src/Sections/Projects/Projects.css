@@ -24,6 +24,15 @@
     margin-top: 30px;
 }
 
+.contactGridLayout {
+    display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 70%; /* Adjust as needed */
+  gap: 30px; /* Adjust as needed */
+}
+
 .blur{
      filter: blur(5px);
 }

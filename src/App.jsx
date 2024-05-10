@@ -1,43 +1,23 @@
+/* eslint-disable no-unused-vars */
 import { useState, useEffect, useRef } from "react";
 import "./App.css";
-import Introduction from "./Sections/Introduction/Introduction";
-import Description from "./Sections/Description/Description";
-import Skills from "./Sections/Skills/Skills";
-import Particles from "./Components/Particles";
-import ResumeSection from "./Sections/Resume/Resume.jsx";
-import Projects from "./Sections/Projects/Projects.jsx";
+import Home from "./Pages/Home.jsx";
+import View_Project from "./Pages/View_Project.jsx";
+import { HashRouter, Route, Routes } from "react-router-dom";
+import Particles from "@tsparticles/react";
 
 function App() {
   return (
     <>
-      <div className="z-[-2000] absolute opacity-[50%] fade_in">
+      <div className="w-screen h-screen z-[-2000] absolute opacity-[50%] fade_in">
         <Particles />
       </div>
-
-      <div className="poppins-bold">
-        <Introduction />
-      </div>
-
-      {/* extra div for scroll spacing */}
-      <div className="w-screen h-[400px]"></div>
-      <div className="w-screen h-[400px]"></div>
-      <div className="w-screen h-[400px]"></div>
-      <div className="w-screen h-[400px]"></div>
-      <div className="w-screen h-[400px]"></div>
-
-      <Description />
-
-      <div className="w-screen h-[200px] bg-black"></div>
-
-      <Skills />
-
-      <div className="w-screen h-[200px] bg-black"></div>
-
-      <ResumeSection />
-
-      <div className="w-screen h-[200px] bg-black"></div>
-
-      {/* <Projects /> */}
+      <HashRouter>
+        <Routes>
+          <Route exact path="/" element={<Home />} />
+          <Route path="/:fileName" element={<View_Project />} />
+        </Routes>
+      </HashRouter>
     </>
   );
 }

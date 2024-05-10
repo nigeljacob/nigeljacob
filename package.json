@@ -19,7 +19,9 @@
     "react-color-extractor": "^1.1.2",
     "react-dom": "^18.2.0",
     "react-icons": "^5.0.1",
+    "react-images-viewer": "^1.7.1",
     "react-intersection-observer": "^9.8.1",
+    "react-router-dom": "^6.23.0",
     "scrollmagic": "^2.0.8"
   },
   "devDependencies": {

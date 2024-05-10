@@ -20,7 +20,7 @@ const Skills = () => {
         <div>
           {SkillsData.map((skill, index) => {
             return (
-              <div className="mt-[30px] ml-[10px]">
+              <div className="mt-[30px] ml-[10px]" key={index}>
                 <h2 className="text-[25px] font-mono text-[#e676e6] font-bold">
                   {skill.skillCategpry}
                 </h2>
@@ -29,6 +29,7 @@ const Skills = () => {
                     <div
                     id="element"
                       className="mt-[20px] font-mono text-[20px] fadeIn"
+                      key = {index}
                     >
                       {sets.setName != "" && sets.setName}
 
@@ -38,6 +39,7 @@ const Skills = () => {
                             <SkillComponent
                               icon={skill.Icon}
                               name={skill.SkillName}
+                              key = {index}
                             />
                           );
                         })}

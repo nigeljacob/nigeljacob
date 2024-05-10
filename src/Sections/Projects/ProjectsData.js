@@ -14,6 +14,33 @@ import PROJECTSYNK4 from "../../assets/PROJECT SYNK/04.png"
 import PROJECTSYNK5 from "../../assets/PROJECT SYNK/05.png"
 import PROJECTSYNK6 from "../../assets/PROJECT SYNK/06.png"
 
+// GAMEZ
+import GAMEZ1 from "../../assets/GAMEZ/01.jpg"
+import GAMEZ2 from "../../assets/GAMEZ/02.jpg"
+import GAMEZ3 from "../../assets/GAMEZ/03.jpg"
+import GAMEZ4 from "../../assets/GAMEZ/04.jpg"
+import GAMEZ5 from "../../assets/GAMEZ/05.jpg"
+
+// WHATZAPP
+import WHATZAPP1 from "../../assets/WHATZAPP/01.jpg"
+import WHATZAPP2 from "../../assets/WHATZAPP/02.jpg"
+import WHATZAPP3 from "../../assets/WHATZAPP/03.jpg"
+import WHATZAPP4 from "../../assets/WHATZAPP/04.jpg"
+import WHATZAPP5 from "../../assets/WHATZAPP/05.jpg"
+import WHATZAPP6 from "../../assets/WHATZAPP/06.jpg"
+
+// VIBRATE
+import VIBRATE1 from "../../assets/VIBRATE/01.jpg"
+import VIBRATE2 from "../../assets/VIBRATE/02.jpg"
+import VIBRATE3 from "../../assets/VIBRATE/03.jpg"
+import VIBRATE4 from "../../assets/VIBRATE/04.jpg"
+import VIBRATE5 from "../../assets/VIBRATE/05.jpg"
+import VIBRATE6 from "../../assets/VIBRATE/06.jpg"
+
+// STANDIFY
+import STANDIFY1 from "../../assets/STANDIFY/01.jpg"
+import STANDIFY2 from "../../assets/STANDIFY/02.jpg"
+
 export const ProjectsData = [
    {
                 title: "Virtual Theater",
@@ -55,7 +82,7 @@ export const ProjectsData = [
                 description: "An android Quiz application where you guess countries from their flags. Test your knowledge, learn new flags, and challenge your friends!",
                 link: "https://github.com/nigeljacob/GAMEZ",
                 image: GAMEZ,
-                images: [PROJECTSYNK1, PROJECTSYNK2, PROJECTSYNK3, PROJECTSYNK4, PROJECTSYNK5, PROJECTSYNK6],
+                images: [GAMEZ1, GAMEZ2, GAMEZ3, GAMEZ4, GAMEZ5],
                 video: "",
                 tech: ["Kotlin", "Jetpack Compose"]
 
@@ -67,7 +94,7 @@ export const ProjectsData = [
                 description: "An android application clone of the original WhatsApp providing features to chat with any user who have joined the platform.",
                 link: "https://github.com/nigeljacob/WhatzApp",
                 image: WHATZAPP,
-                images: [PROJECTSYNK1, PROJECTSYNK2, PROJECTSYNK3, PROJECTSYNK4, PROJECTSYNK5, PROJECTSYNK6],
+                images: [WHATZAPP1, WHATZAPP2, WHATZAPP3, WHATZAPP4, WHATZAPP5, WHATZAPP6],
                 video: "",
                 tech: ["Java", "Android Views", "Firebase"]
             },
@@ -78,7 +105,7 @@ export const ProjectsData = [
                 description: "An Android application to manage the income and expense of the user providing them with a clear understanding on how much they can save every month",
                 link: "https://github.com/nigeljacob/VibrateExpenseManager",
                 image: VIBRATE,
-                images: [PROJECTSYNK1, PROJECTSYNK2, PROJECTSYNK3, PROJECTSYNK4, PROJECTSYNK5, PROJECTSYNK6],
+                images: [VIBRATE1, VIBRATE2, VIBRATE3, VIBRATE4, VIBRATE5, VIBRATE6],
                 video: "",
                 tech: ["Java", "Android Views", "Firebase"]
              }, 
@@ -89,7 +116,7 @@ export const ProjectsData = [
                 description: "An android application built to show real time updates on currently playing Spotify music and a virtual stream desk allowing users to open application on a Mac with just a click.",
                 link: "https://github.com/nigeljacob/Standify",
                 image: image,
-                images: [PROJECTSYNK1, PROJECTSYNK2, PROJECTSYNK3, PROJECTSYNK4, PROJECTSYNK5, PROJECTSYNK6],
+                images: [STANDIFY1, STANDIFY2],
                 video: "",
                 tech: ["Java", "Android Views", "Firebase", "Javascript", "Spotify API"]
              }, 
@@ -110,7 +137,7 @@ export const ProjectsData = [
                 timeline: "2022",
                 description: "A medical research project to identify various challenges in medical industry focusing on key areas such as medical appointments, medicine distribution, genetic factors in health and healthy food consumptions by providing a design solution to streamline process, enhance patient experience and contribute overall health care efficiency",
                 image: image,
-                images: [PROJECTSYNK1, PROJECTSYNK2, PROJECTSYNK3, PROJECTSYNK4, PROJECTSYNK5, PROJECTSYNK6],
+                images: [],
                 video: "",
                 tech: ["Figma"]
              }

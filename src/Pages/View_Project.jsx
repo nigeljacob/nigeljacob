@@ -32,7 +32,7 @@ const View_Project = (props) => {
             <img
               src={project.image}
               alt=""
-              className="w-[70px] h-[70px] mr-[10px]"
+              className="w-[70px] h-[70px] mr-[10px] rounded-[10px]"
             />
           </div>
         </div>
@@ -60,28 +60,30 @@ const View_Project = (props) => {
           </div>
         </div>
 
-        <div className="ml-[10px] mt-[40px]">
-          <h1 className="text-[30px] poppins-extrabold">Images</h1>
-          <div className="flex items-center w-full projectImagesWidth overflow-y-scroll mt-[10px]">
-            {project.images.map((image, index) => {
-              return (
-                <div
-                  key={index}
-                  className="flex-shrink-0"
-                  onClick={(event) => {
-                    setCurrent(image);
-                  }}
-                >
-                  <img
-                    src={image}
-                    alt=""
-                    className="h-[200px] rounded-[10px] flex-shrink-0"
-                  />
-                </div>
-              );
-            })}
+        {project.images.length > 0 && (
+          <div className="ml-[10px] mt-[40px]">
+            <h1 className="text-[30px] poppins-extrabold">Images</h1>
+            <div className="flex items-center w-full projectImagesWidth overflow-y-scroll mt-[10px]">
+              {project.images.map((image, index) => {
+                return (
+                  <div
+                    key={index}
+                    className="flex-shrink-0 mr-[20px]"
+                    onClick={(event) => {
+                      setCurrent(image);
+                    }}
+                  >
+                    <img
+                      src={image}
+                      alt=""
+                      className="h-[200px] rounded-[10px] flex-shrink-0"
+                    />
+                  </div>
+                );
+              })}
+            </div>
           </div>
-        </div>
+        )}
 
         <div className="ml-[10px] mt-[40px]">
           <h1 className="text-[30px] poppins-extrabold">Link to Project</h1>
@@ -99,11 +101,11 @@ const View_Project = (props) => {
           <div className="ml-[10px] mt-[40px]">
             <h1 className="text-[30px] poppins-extrabold mb-[10px]">Video</h1>
             <iframe
-            width="300px"
+              width="300px"
               src="https://www.youtube.com/embed/JF-MRp2CAXY"
               title="Synk [ SE -30 ] - Team Clulessjellybeans"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen"
-              allowfullscreen = {true}
+              allowfullscreen={true}
             ></iframe>
           </div>
         )}
@@ -138,7 +140,6 @@ const View_Project = (props) => {
 
             <button
               className="absolute right-0 top-0 mt-[30px] mr-[50px] bg-[#000000] w-[40px] h-[40px] rounded-[50%] hover:bg-[red]"
-              disabled={currentIndex == project.images.length - 1}
               onClick={(event) => {
                 setCurrent(null);
               }}

@@ -91,7 +91,25 @@ export const ResumeData = [
         title: "Certifications",
         content: [
             {
-                title: "Java",
+                title: "Software Engineering Intern Certified",
+                timeline: "2024",
+                description: "HackerRank ceritified for successfully clearing the assesment for the role",
+                link: "https://www.hackerrank.com/certificates/86706b11a630"
+            },
+            {
+                title: "React Certified",
+                timeline: "2024",
+                description: "HackerRank ceritified for successfully clearing the assesment for the skill",
+                link: "https://www.hackerrank.com/certificates/a4532b9fc115"
+            },
+            {
+                title: "Javascript Certified",
+                timeline: "2024",
+                description: "HackerRank ceritified for successfully clearing the assesment for the skill",
+                link: "https://www.hackerrank.com/certificates/2a03628cba67"
+            },
+            {
+                title: "Java Certified",
                 timeline: "2024",
                 description: "HackerRank ceritified for successfully clearing the assesment for the skill",
                 link: "https://www.hackerrank.com/certificates/2a03628cba67"

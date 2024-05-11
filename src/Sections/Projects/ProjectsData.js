@@ -1,10 +1,19 @@
 import PROJECTSYNK from '../../assets/PROJECT SYNK.png';
-import image from '../../assets/PROJECT SYNK.png';
+import VIRTUALTHEATER from '../../assets/VITUAL THEATER.png';
 import GAMEZ from '../../assets/GAMEZ.png'
 import WHATZAPP from '../../assets/WHATZAPP.png'
 import VIBRATE from '../../assets/VIBRATE.jpeg'
+import REEL_TIMES from '../../assets/REEL TIMES.png'
 
-
+// Virtual Theater
+import VIRTUALTHEATER1 from "../../assets/VIRTUAL THEATER/01.png"
+import VIRTUALTHEATER2 from "../../assets/VIRTUAL THEATER/02.png"
+import VIRTUALTHEATER3 from "../../assets/VIRTUAL THEATER/03.png"
+import VIRTUALTHEATER4 from "../../assets/VIRTUAL THEATER/04.png"
+import VIRTUALTHEATER5 from "../../assets/VIRTUAL THEATER/05.png"
+import VIRTUALTHEATER6 from "../../assets/VIRTUAL THEATER/06.png"
+import VIRTUALTHEATER7 from "../../assets/VIRTUAL THEATER/07.png"
+import VIRTUALTHEATER8 from "../../assets/VIRTUAL THEATER/08.png"
 
 // project synk
 import PROJECTSYNK1 from "../../assets/PROJECT SYNK/01.png"
@@ -41,6 +50,11 @@ import VIBRATE6 from "../../assets/VIBRATE/06.jpg"
 import STANDIFY1 from "../../assets/STANDIFY/01.jpg"
 import STANDIFY2 from "../../assets/STANDIFY/02.jpg"
 
+//REEL TIMES
+import REEL_TIMES1 from "../../assets/REEL TIMES/01.png"
+import REEL_TIMES2 from "../../assets/REEL TIMES/02.png"
+import REEL_TIMES3 from "../../assets/REEL TIMES/03.png"
+
 export const ProjectsData = [
    {
                 title: "Virtual Theater",
@@ -48,8 +62,8 @@ export const ProjectsData = [
                 timeline: "Ongoing",
                 description: "A WEB Application built using react to help connect friends together online to watch a movie ",
                 link: "https://github.com/nigeljacob/virtual_theater",
-                image: PROJECTSYNK,
-                images: [PROJECTSYNK1, PROJECTSYNK2, PROJECTSYNK3, PROJECTSYNK4, PROJECTSYNK5, PROJECTSYNK6],
+                image: VIRTUALTHEATER,
+                images: [VIRTUALTHEATER1, VIRTUALTHEATER2, VIRTUALTHEATER3, VIRTUALTHEATER4, VIRTUALTHEATER5, VIRTUALTHEATER6, VIRTUALTHEATER7, VIRTUALTHEATER8],
                 video: "",
                 tech: ["React", "Express.js", "Socket.io", "WebRTC", "Firebase", "Node.js", "CSS", "Tailwind"]
             },
@@ -115,7 +129,7 @@ export const ProjectsData = [
                 timeline: "2023",
                 description: "An android application built to show real time updates on currently playing Spotify music and a virtual stream desk allowing users to open application on a Mac with just a click.",
                 link: "https://github.com/nigeljacob/Standify",
-                image: image,
+                image: "https://wpguru.co.uk/wp-content/uploads/2019/04/Elgato-Logo.jpg",
                 images: [STANDIFY1, STANDIFY2],
                 video: "",
                 tech: ["Java", "Android Views", "Firebase", "Javascript", "Spotify API"]
@@ -126,8 +140,8 @@ export const ProjectsData = [
                 timeline: "2023",
                 description: "A web application platform build to allow customers to book tickets for movie shows.",
                 link: "https://github.com/nigeljacob/ReelTimesCW",
-                image: image,
-                images: [PROJECTSYNK1, PROJECTSYNK2, PROJECTSYNK3, PROJECTSYNK4, PROJECTSYNK5, PROJECTSYNK6],
+                image: REEL_TIMES,
+                images: [REEL_TIMES1, REEL_TIMES2, REEL_TIMES3],
                 video: "",
                 tech: ["HTML", "Javascript","CSS"]
              }, 
@@ -136,7 +150,7 @@ export const ProjectsData = [
                 premalink: "dr-24-7-research-and-design-project",
                 timeline: "2022",
                 description: "A medical research project to identify various challenges in medical industry focusing on key areas such as medical appointments, medicine distribution, genetic factors in health and healthy food consumptions by providing a design solution to streamline process, enhance patient experience and contribute overall health care efficiency",
-                image: image,
+                image: "https://cdn0.iconfinder.com/data/icons/medical-health-care-blue-series-set-1/64/a-37-512.png",
                 images: [],
                 video: "",
                 tech: ["Figma"]

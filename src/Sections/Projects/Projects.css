@@ -65,7 +65,7 @@
 
 @media screen and (max-width: 600px){
 
-    .gridLayout{
+    .gridLayout, .referencewidth{
         display: flex;
         flex-direction: column;
         justify-content: center;

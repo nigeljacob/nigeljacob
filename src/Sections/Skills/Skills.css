@@ -34,7 +34,7 @@
     -webkit-transition: scale 1s;
 }
 
-.title, .referencewidth{
+.title, .referencewidth, .journeyWidth{
         width: 70%;
     }
 

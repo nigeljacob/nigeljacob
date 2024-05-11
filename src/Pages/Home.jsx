@@ -55,7 +55,7 @@ const Home = () => {
 
       <GetInTouch />
 
-      <div className="w-screen h-[50px] bg-black"></div>
+      <div className="w-screen h-[150px] bg-black"></div>
 
       <div className="w-screen h-[100px] bg-[#000000] flex items-center justify-center ">
         <p>&copy; 2024 Nigel Jacob</p>

@@ -18,7 +18,7 @@ const Reference = () => {
         {ReferencesData.map((reference, index) => {
           return (
             <div
-              className="flex-1 bg-[#171717] rounded-[10px] m-[20px] p-[20px]"
+              className="flex-1 bg-[#171717] rounded-[10px] m-[20px] p-[20px] w-full"
               key={index}
             >
               <h1 className="text-[20px] mb-[5px]">

@@ -4,13 +4,15 @@ import "./App.css";
 import Home from "./Pages/Home.jsx";
 import View_Project from "./Pages/View_Project.jsx";
 import { HashRouter, Route, Routes } from "react-router-dom";
-import Particles from "@tsparticles/react";
+import video from "./assets/video.mp4"
 
 function App() {
   return (
     <>
-      <div className="w-screen h-screen z-[-2000] absolute opacity-[50%] fade_in">
-        <Particles />
+      <div className="w-screen h-screen z-[-2000] fixed opacity-[100%] fade_in">
+        <video autoPlay muted loop controls={false}>
+          <source src={video} />
+        </video>
       </div>
       <HashRouter>
         <Routes>

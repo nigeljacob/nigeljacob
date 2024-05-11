@@ -27,7 +27,7 @@ const Home = () => {
 
       <Description />
 
-      <div className="w-screen h-[200px] bg-black"></div>
+      <div className="w-screen h-[100px] bg-black"></div>
 
       <Skills />
 

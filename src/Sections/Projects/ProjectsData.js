@@ -15,6 +15,14 @@ import VIRTUALTHEATER6 from "../../assets/VIRTUAL THEATER/06.png"
 import VIRTUALTHEATER7 from "../../assets/VIRTUAL THEATER/07.png"
 import VIRTUALTHEATER8 from "../../assets/VIRTUAL THEATER/08.png"
 
+// SPOTIFY CLONE
+import SPOTIFYCLONE1 from "../../assets/SPOTIFY CLONE/01.png"
+import SPOTIFYCLONE2 from "../../assets/SPOTIFY CLONE/02.png"
+import SPOTIFYCLONE3 from "../../assets/SPOTIFY CLONE/03.png"
+import SPOTIFYCLONE4 from "../../assets/SPOTIFY CLONE/04.png"
+import SPOTIFYCLONE5 from "../../assets/SPOTIFY CLONE/05.png"
+import SPOTIFYCLONE6 from "../../assets/SPOTIFY CLONE/06.png"
+
 // project synk
 import PROJECTSYNK1 from "../../assets/PROJECT SYNK/01.png"
 import PROJECTSYNK2 from "../../assets/PROJECT SYNK/02.png"
@@ -74,7 +82,7 @@ export const ProjectsData = [
                 description: "A Desktop and Web Application clone of the original Spotify providing features to listen to music and create playlists.", 
                 link: "https://github.com/nigeljacob/spotify",
                 image: "https://i.pinimg.com/originals/4b/ee/0a/4bee0a9f477906eb86399c83945deb47.jpg",
-                images: [PROJECTSYNK1, PROJECTSYNK2, PROJECTSYNK3, PROJECTSYNK4, PROJECTSYNK5, PROJECTSYNK6],
+                images: [SPOTIFYCLONE1,SPOTIFYCLONE2,SPOTIFYCLONE3,SPOTIFYCLONE4,SPOTIFYCLONE5,SPOTIFYCLONE6],
                 video: "",
                 tech: ["React", "Electron Framework", "Firebase", "Node.js", "CSS", "Tailwind"]
             },

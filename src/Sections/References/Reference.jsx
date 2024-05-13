@@ -1,6 +1,7 @@
 /* eslint-disable no-unused-vars */
 import React from 'react'
 import { ReferencesData } from './ReferencesData';
+import AnimateOnView from '../../Components/AnimateOnView';
 
 const Reference = () => {
   return (
@@ -17,26 +18,27 @@ const Reference = () => {
       <div className="flex items-center referencewidth m-auto fadeIn">
         {ReferencesData.map((reference, index) => {
           return (
-            <div
-              className="flex-1 bg-[#171717] rounded-[10px] m-[20px] p-[20px] w-full"
-              key={index}
-            >
-              <h1 className="text-[20px] mb-[5px]">
-                <b>{reference.Name}</b>
-              </h1>
-              <hr></hr>
-              <p className="text-[#D7D7D7] text-[15px] mt-[5px]">
-                {reference.Post}
-              </p>
-              <p className="text-[#D7D7D7] text-[15px] mt-[5px]">
-                {reference.Company}
-              </p>
-              <p className="text-[#D7D7D7] text-[15px] mt-[5px]">
-                {reference.Phone}
-              </p>
-              <p className="text-[#D7D7D7] text-[15px] mt-[5px]">
-                {reference.Email}
-              </p>
+            <div key={index} className="flex-1 m-[20px]">
+              <AnimateOnView>
+                <div className="bg-[#171717] rounded-[10px] p-[20px] w-full">
+                  <h1 className="text-[20px] mb-[5px]">
+                    <b>{reference.Name}</b>
+                  </h1>
+                  <hr></hr>
+                  <p className="text-[#D7D7D7] text-[15px] mt-[5px]">
+                    {reference.Post}
+                  </p>
+                  <p className="text-[#D7D7D7] text-[15px] mt-[5px]">
+                    {reference.Company}
+                  </p>
+                  <p className="text-[#D7D7D7] text-[15px] mt-[5px]">
+                    {reference.Phone}
+                  </p>
+                  <p className="text-[#D7D7D7] text-[15px] mt-[5px]">
+                    {reference.Email}
+                  </p>
+                </div>
+              </AnimateOnView>
             </div>
           );
         })}

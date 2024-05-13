@@ -1,10 +1,10 @@
-import React, {useEffect} from "react";
+/* eslint-disable react-hooks/rules-of-hooks */
+import React, { useEffect, useRef } from "react";
 import { SkillsData } from "./SkillsData";
 import SkillComponent from "../../Components/SkillComponent";
 import "./Skills.css";
 
 const Skills = () => {
-
   return (
     <div className="h-fit w-screen bg-black flex flex-col justify-center">
       <div className="m-auto title">
@@ -19,6 +19,7 @@ const Skills = () => {
 
         <div>
           {SkillsData.map((skill, index) => {
+
             return (
               <div className="mt-[30px] ml-[10px]" key={index}>
                 <h2 className="text-[25px] font-mono text-[#e676e6] font-bold">
@@ -27,9 +28,9 @@ const Skills = () => {
                 {skill.skillSet.map((sets, index) => {
                   return (
                     <div
-                    id="element"
+                      id="element"
                       className="mt-[20px] font-mono text-[20px] fadeIn"
-                      key = {index}
+                      key={index}
                     >
                       {sets.setName != "" && sets.setName}
 
@@ -39,7 +40,7 @@ const Skills = () => {
                             <SkillComponent
                               icon={skill.Icon}
                               name={skill.SkillName}
-                              key = {index}
+                              key={index}
                             />
                           );
                         })}

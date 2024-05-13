@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import * as FAICONS from "react-icons/fa";
 import * as SIIcons from "react-icons/si";
 import * as RIIcons from "react-icons/ri";
@@ -7,6 +7,7 @@ import * as DIIcons from "react-icons/di";
 import * as IOIcons from "react-icons/io5";
 import * as GIIcons from "react-icons/gi";
 import * as MDIcons from "react-icons/md";
+import AnimateOnView from "./AnimateOnView";
 
 const SkillComponent = (props) => {
   const renderIcon = (iconName) => {
@@ -78,9 +79,7 @@ const SkillComponent = (props) => {
           <RIIcons.RiTeamFill className="icon text-[#ffffff] bg-[#2a5b84] rounded-[11px] p-[3px]" />
         );
       case "Problem Solving":
-        return (
-          <GIIcons.GiBrain className="icon text-[#ff4a4a]" />
-        );
+        return <GIIcons.GiBrain className="icon text-[#ff4a4a]" />;
       case "Communication":
         return <GIIcons.GiSpeaker className="icon text-[#4affa5]" />;
       case "Time Management":
@@ -99,10 +98,12 @@ const SkillComponent = (props) => {
   };
 
   return (
-    <div className="w-[150px] h-[150px] min-h-[150px] min-w-[150px] bg-[#111111] flex flex-col justify-center items-center gridElement rounded-[10px]">
-      {renderIcon(props.icon)}
-      <h3 className="mt-[20px] text-[18px] font-sans">{props.name}</h3>
-    </div>
+    <AnimateOnView>
+      <div className="w-[150px] h-[150px] min-h-[150px] min-w-[150px] bg-[#111111] flex flex-col justify-center items-center gridElement rounded-[10px]">
+        {renderIcon(props.icon)}
+        <h3 className="mt-[20px] text-[18px] font-sans">{props.name}</h3>
+      </div>
+    </AnimateOnView>
   );
 };
 

@@ -1,11 +1,15 @@
 /* eslint-disable no-unused-vars */
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { useLocation, useParams } from 'react-router-dom'
 import { ProjectsData } from '../Sections/Projects/ProjectsData';
 
 const View_Project = (props) => {
 
   const { fileName } = useParams();
+
+  useEffect(()=> {
+    window.scrollTo(0, 0);
+  }, [fileName]);
 
   const location = useLocation();
   const state = location.state;
@@ -18,7 +22,7 @@ const View_Project = (props) => {
 
   const [currentIndex, setCurrentIndex] = useState(0)
   return (
-    <div className="w-screen p-[30px] px-[50px] relative bg-[#0b0b0b] min-h-screen">
+    <div className="w-screen p-[30px] px-[50px] relative bg-[#171717] min-h-screen">
       <div
         className={
           current === null ? "w-full h-full" : "w-full h-full opacity-[20%]"
@@ -102,7 +106,7 @@ const View_Project = (props) => {
         <div className="ml-[10px] mt-[40px]">
           <h1 className="text-[30px] poppins-extrabold">Link to Project</h1>
           <button
-            className=""
+            className="text-[#00aaff]"
             onClick={(event) => {
               window.open(project.link);
             }}
@@ -163,6 +167,12 @@ const View_Project = (props) => {
           </div>
         </div>
       )}
+
+      <div className="w-screen h-[100px]"></div>
+
+      <div className="w-screen h-[100px] bg-[#171717] flex items-center justify-center absolute bottom-0 left-0">
+        <p>&copy; 2024 Nigel Jacob</p>
+      </div>
     </div>
   );
 }

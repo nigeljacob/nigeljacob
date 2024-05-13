@@ -10,7 +10,13 @@ function App() {
   return (
     <>
       <div className="w-screen h-screen z-[-2000] fixed opacity-[100%] fade_in">
-        <video autoPlay muted loop controls={false} className="min-w-full min-h-full w-auto h-auto object-cover">
+        <video
+          autoPlay
+          muted
+          loop
+          controls={false}
+          className="min-w-full min-h-full w-auto h-auto object-cover"
+        >
           <source src={video} />
         </video>
       </div>

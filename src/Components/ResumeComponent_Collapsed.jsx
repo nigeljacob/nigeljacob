@@ -1,9 +1,24 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import "../Sections/Resume/Resume.css";
 import { IoMdArrowDropright } from "react-icons/io";
+import { motion, useAnimation, useInView } from "framer-motion";
 
 const ResumeComponent = (props) => {
   var borderCustom = null;
+
+  const ref = useRef(null);
+
+  const isVisible = useInView(ref, { once: true });
+
+  const mainControlls = useAnimation();
+
+  useEffect(() => {
+    if (isVisible) {
+      mainControlls.start("visible");
+    } else {
+      mainControlls.start("hidden");
+    }
+  }, [isVisible]);
 
   switch (props.title) {
     case "Summary":
@@ -40,7 +55,17 @@ const ResumeComponent = (props) => {
 
   if (props.type === "summary") {
     return (
-      <div className="w-full h-full flex flex-col justify-center items-end resumeComponent_right">
+      <motion.div
+        ref={ref}
+        variants={{
+          hidden: { opacity: 0, x: 100 },
+          visible: { opacity: 1, x: 0 },
+        }}
+        initial="hidden"
+        animate={mainControlls}
+        transition={{ duration: 0.3 }}
+        className="w-full h-full flex flex-col justify-center items-end"
+      >
         <div className={borderCustom}>
           <h2 className="text-[25px]">{props.title.toUpperCase()}</h2>
           <IoMdArrowDropright className="h-8 w-8 ml-[-40px] rotate-180 absolute left-0 text-[#A7A7A7]" />
@@ -57,11 +82,20 @@ const ResumeComponent = (props) => {
             })}
           </div>
         </div>
-      </div>
+      </motion.div>
     );
   } else {
     return (
-      <div className="w-full h-full flex flex-col justify-center items-end resumeComponent_right">
+      <motion.div
+        ref={ref}
+        variants={{
+          hidden: { opacity: 0, x: 100 },
+          visible: { opacity: 1, x: 0 },
+        }}
+        initial="hidden"
+        animate={mainControlls}
+        transition={{ duration: 0.3 }}
+         className="w-full h-full flex flex-col justify-center items-end">
         <div className={borderCustom}>
           <h2 className="resumeTitle">
             {props.title.toUpperCase()}
@@ -92,7 +126,7 @@ const ResumeComponent = (props) => {
             })}
           </div>
         </div>
-      </div>
+      </motion.div>
     );
   }
 };

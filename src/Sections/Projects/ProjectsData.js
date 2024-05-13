@@ -69,7 +69,7 @@ export const ProjectsData = [
             },
    {
                 title: "Spotify Clone",
-                premalink: "project-synk",
+                premalink: "spotify-clone",
                 timeline: "Ongoing",
                 description: "A Desktop and Web Application clone of the original Spotify providing features to listen to music and create playlists.", 
                 link: "https://github.com/nigeljacob/spotify",

@@ -18,17 +18,19 @@ const Journey = () => {
       <div className="flex items-top overflow-y-scroll journeyWidth m-auto mt-[20px] fadeIn">
         {JourneyData.map((item, index) => {
           return (
-            <AnimateOnView key={index}>
-              <div className="mr-[30px] max-w-[200px] flex-shrink-0">
-                <div className="w-full max-w-[200px] relative">
-                  <h1 className="text-[30px]">
-                    <b>{item.year}</b>
-                  </h1>
-                  <div className="min-h-[3px] top-5 right-0 w-[100px] absolute linearWhite"></div>
+            <div key={index} className="mr-[30px] max-w-[200px] flex-shrink-0">
+              <AnimateOnView>
+                <div>
+                  <div className="w-full max-w-[200px] relative">
+                    <h1 className="text-[30px]">
+                      <b>{item.year}</b>
+                    </h1>
+                    <div className="min-h-[3px] top-5 right-0 w-[100px] absolute linearWhite"></div>
+                  </div>
+                  <p className="text-[#A7A7A7]">{item.description}</p>
                 </div>
-                <p className="text-[#A7A7A7]">{item.description}</p>
-              </div>
-            </AnimateOnView>
+              </AnimateOnView>
+            </div>
           );
         })}
       </div>

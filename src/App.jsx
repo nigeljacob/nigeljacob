@@ -14,6 +14,7 @@ function App() {
           autoPlay
           muted
           loop
+          playsInline
           controls={false}
           className="min-w-full min-h-full w-auto h-auto object-cover"
         >

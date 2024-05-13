@@ -29,9 +29,20 @@ const View_Project = (props) => {
             HOME / {project.title}
           </h1>
           <div className="flex items-center">
-            <h1 className="poppins-extrabold text-[70px] text-[lightcoral] textSize flex-1">
-              {project.title}
-            </h1>
+            <div className="flex-1">
+              <h1 className="poppins-extrabold text-[70px] text-[lightcoral] textSize flex-1">
+                {project.title}
+                <span className="text-[16px]">
+                  {project.timeline.includes("Ongoing") ? (
+                    <p className="text-[#00ff00]">
+                      Project is still on Development Stage
+                    </p>
+                  ) : (
+                    <p className="text-[#A7A7A7]">{project.timeline}</p>
+                  )}
+                </span>
+              </h1>
+            </div>
             <img
               src={project.image}
               alt=""

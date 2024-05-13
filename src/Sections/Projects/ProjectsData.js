@@ -67,7 +67,7 @@ export const ProjectsData = [
    {
                 title: "Virtual Theater",
                 premalink: "virtual-theater",
-                timeline: "Ongoing",
+                timeline: "April 2024 - Ongoing",
                 description: "A WEB Application built using react to help connect friends together online to watch a movie ",
                 link: "https://github.com/nigeljacob/virtual_theater",
                 image: VIRTUALTHEATER,
@@ -78,7 +78,7 @@ export const ProjectsData = [
    {
                 title: "Spotify Clone",
                 premalink: "spotify-clone",
-                timeline: "Ongoing",
+                timeline: "April 2024 - Ongoing",
                 description: "A Desktop and Web Application clone of the original Spotify providing features to listen to music and create playlists.", 
                 link: "https://github.com/nigeljacob/spotify",
                 image: "https://i.pinimg.com/originals/4b/ee/0a/4bee0a9f477906eb86399c83945deb47.jpg",
@@ -89,7 +89,7 @@ export const ProjectsData = [
             {
                 title: "PROJECT SYNK",
                 premalink: "project-synk",
-                timeline: "2024",
+                timeline: "September 2023 - March 2024",
                 description: "A desktop application built using react combined with electron framework that would help team leaders and project managers to keep their team on track. Advanced progress tracking, file version tracking and real time progress provided by the application would enable a team leader to always know what the member is working on.",
                 link: "https://sites.google.com/view/synk/home?authuser=0",
                 image: PROJECTSYNK,
@@ -100,7 +100,7 @@ export const ProjectsData = [
             {
                 title: "GAMEZ",
                 premalink: "gamez",
-                timeline: "2024",
+                timeline: "February 2024 - March 2024",
                 description: "An android Quiz application where you guess countries from their flags. Test your knowledge, learn new flags, and challenge your friends!",
                 link: "https://github.com/nigeljacob/GAMEZ",
                 image: GAMEZ,
@@ -112,7 +112,7 @@ export const ProjectsData = [
             {
                 title: "WHATZAPP",
                 premalink: "whatzapp",
-                timeline: "2023",
+                timeline: "October 2023 - November 2023",
                 description: "An android application clone of the original WhatsApp providing features to chat with any user who have joined the platform.",
                 link: "https://github.com/nigeljacob/WhatzApp",
                 image: WHATZAPP,
@@ -123,7 +123,7 @@ export const ProjectsData = [
              {
                 title: "VIBRATE",
                 premalink: "vibrate",
-                timeline: "2023",
+                timeline: "January 2023 - May 2023",
                 description: "An Android application to manage the income and expense of the user providing them with a clear understanding on how much they can save every month",
                 link: "https://github.com/nigeljacob/VibrateExpenseManager",
                 image: VIBRATE,
@@ -134,7 +134,7 @@ export const ProjectsData = [
              {
                 title: "STANDIFY",
                 premalink: "standify",
-                timeline: "2023",
+                timeline: "May 2023 - July 2023",
                 description: "An android application built to show real time updates on currently playing Spotify music and a virtual stream desk allowing users to open application on a Mac with just a click.",
                 link: "https://github.com/nigeljacob/Standify",
                 image: "https://wpguru.co.uk/wp-content/uploads/2019/04/Elgato-Logo.jpg",
@@ -145,7 +145,7 @@ export const ProjectsData = [
              {
                 title: "REEL TIMES",
                 premalink: "reel-times",
-                timeline: "2023",
+                timeline: "June 2022 - July 2022",
                 description: "A web application platform build to allow customers to book tickets for movie shows.",
                 link: "https://github.com/nigeljacob/ReelTimesCW",
                 image: REEL_TIMES,
@@ -156,7 +156,7 @@ export const ProjectsData = [
              {
                 title: "DR.24/7 - RESEARCH AND DESIGN PROJECT",
                 premalink: "dr-24-7-research-and-design-project",
-                timeline: "2022",
+                timeline: "August 2022 - November 2022",
                 description: "A medical research project to identify various challenges in medical industry focusing on key areas such as medical appointments, medicine distribution, genetic factors in health and healthy food consumptions by providing a design solution to streamline process, enhance patient experience and contribute overall health care efficiency",
                 image: "https://cdn0.iconfinder.com/data/icons/medical-health-care-blue-series-set-1/64/a-37-512.png",
                 images: [],

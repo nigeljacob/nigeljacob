@@ -1,15 +1,18 @@
 /* eslint-disable no-unused-vars */
 import React, { useState } from 'react'
 import { useLocation, useParams } from 'react-router-dom'
+import { ProjectsData } from '../Sections/Projects/ProjectsData';
 
 const View_Project = (props) => {
 
-  const {filename} = useParams();
+  const { fileName } = useParams();
 
   const location = useLocation();
   const state = location.state;
 
-  const [project, setProject] = useState(state["Project"]);
+  const [project, setProject] = useState(
+    ProjectsData.find((item) => item.premalink === fileName)
+  );
 
   const [current, setCurrent] = useState(null);
 

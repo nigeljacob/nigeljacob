@@ -3,7 +3,7 @@ import { useState, useEffect, useRef } from "react";
 import "./App.css";
 import Home from "./Pages/Home.jsx";
 import View_Project from "./Pages/View_Project.jsx";
-import { HashRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import video from "./assets/video.mp4"
 
 function App() {
@@ -14,12 +14,12 @@ function App() {
           <source src={video} />
         </video>
       </div>
-      <HashRouter>
+      <BrowserRouter>
         <Routes>
           <Route exact path="/" element={<Home />} />
           <Route path="/:fileName" element={<View_Project />} />
         </Routes>
-      </HashRouter>
+      </BrowserRouter>
     </>
   );
 }

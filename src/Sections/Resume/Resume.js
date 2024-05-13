@@ -1,3 +1,5 @@
+import { ProjectsData } from "../Projects/ProjectsData";
+
 export const ResumeData = [
     {
         type: "summary",
@@ -30,61 +32,7 @@ export const ResumeData = [
     {
         type: "section",
         title: "Projects",
-        content: [
-            {
-                title: "Virtual Theater",
-                timeline: "Ongoing",
-                description: "A WEB Application built using react to help connect friends together online to watch a movie ",
-                link: "https://github.com/nigeljacob/virtual_theater"
-            },
-            {
-                title: "Spotify Clone",
-                timeline: "Ongoing",
-                description: "A Desktop and Web Application clone of the original Spotify providing features to listen to music and create playlists.",
-                link: "https://github.com/nigeljacob/spotify"
-            },
-            {
-                title: "PROJECT SYNK",
-                timeline: "2024",
-                description: "A desktop application built using react combined with electron framework that would help team leaders and project managers to keep their team on track. Advanced progress tracking, file version tracking and real time progress provided by the application would enable a team leader to always know what the member is working on.",
-                link: "https://sites.google.com/view/synk/home?authuser=0"
-            },
-            {
-                title: "GAMEZ - (Private Repository)",
-                timeline: "2024",
-                description: "An android Quiz application where you guess countries from their flags. Test your knowledge, learn new flags, and challenge your friends!",
-                link: "https://github.com/nigeljacob/GAMEZ"
-            },
-            {
-                title: "WHATZAPP",
-                timeline: "2023",
-                description: "An android application clone of the original WhatsApp providing features to chat with any user who have joined the platform.",
-                link: "https://github.com/nigeljacob/WhatzApp"
-            },
-             {
-                title: "VIBRATE",
-                timeline: "2023",
-                description: "An Android application to manage the income and expense of the user providing them with a clear understanding on how much they can save every month",
-                link: "https://github.com/nigeljacob/VibrateExpenseManager"
-             }, 
-             {
-                title: "STANDIFY",
-                timeline: "2023",
-                description: "An android application built to show real time updates on currently playing Spotify music and a virtual stream desk allowing users to open application on a Mac with just a click.",
-                link: "https://github.com/nigeljacob/Standify"
-             }, 
-             {
-                title: "REEL TIMES",
-                timeline: "2023",
-                description: "A web application platform build to allow customers to book tickets for movie shows.",
-                link: "https://github.com/nigeljacob/ReelTimesCW"
-             }, 
-             {
-                title: "DR.24/7 - RESEARCH AND DESIGN PROJECT",
-                timeline: "2022",
-                description: "A medical research project to identify various challenges in medical industry focusing on key areas such as medical appointments, medicine distribution, genetic factors in health and healthy food consumptions by providing a design solution to streamline process, enhance patient experience and contribute overall health care efficiency"
-             }
-        ],
+        content: ProjectsData,
     },
     {
         type: "section",

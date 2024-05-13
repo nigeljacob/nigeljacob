@@ -7,16 +7,17 @@ const View_Project = (props) => {
 
   const { fileName } = useParams();
 
-  useEffect(()=> {
-    window.scrollTo(0, 0);
-  }, [fileName]);
-
   const location = useLocation();
   const state = location.state;
 
   const [project, setProject] = useState(
     ProjectsData.find((item) => item.premalink === fileName)
   );
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+    document.title = "Projects - " + project.title;
+  }, [project]);
 
   const [current, setCurrent] = useState(null);
 

@@ -168,7 +168,7 @@ const View_Project = (props) => {
         </div>
       )}
 
-      <div className="w-screen h-[100px]"></div>
+      <div className="w-full h-[100px]"></div>
 
       <div className="w-screen h-[100px] bg-[#171717] flex items-center justify-center absolute bottom-0 left-0">
         <p>&copy; 2024 Nigel Jacob</p>

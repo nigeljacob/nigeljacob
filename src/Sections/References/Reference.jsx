@@ -18,7 +18,7 @@ const Reference = () => {
       <div className="flex items-center referencewidth m-auto fadeIn">
         {ReferencesData.map((reference, index) => {
           return (
-            <div key={index} className="flex-1 m-[20px]">
+            <div key={index} className="flex-1 m-[20px]  w-full">
               <AnimateOnView>
                 <div className="bg-[#171717] rounded-[10px] p-[20px] w-full">
                   <h1 className="text-[20px] mb-[5px]">

@@ -27,7 +27,7 @@ const View_Project = (props) => {
 
   const [currentIndex, setCurrentIndex] = useState(0)
   return (
-    <div className="w-screen p-[30px] px-[50px] relative bg-[#171717] min-h-screen">
+    <div className="w-screen p-[30px] relative bg-[#171717] min-h-screen">
       <div
         className={
           current === null ? "w-full h-full" : "w-full h-full opacity-[20%]"

@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 import Particles from '@tsparticles/react';
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
 import Introduction from "../Sections/Introduction/Introduction";
 import Description from "../Sections/Description/Description";
 import Skills from "../Sections/Skills/Skills";
@@ -12,6 +12,16 @@ import Reference from '../Sections/References/Reference.jsx';
 import GetInTouch from '../Sections/Get In Touch/GetInTouch.jsx';
 
 const Home = () => {
+
+  const lastDiv = useRef(null);
+
+  useEffect(() => {
+    if (window.location.search === "?contact-me") {
+      lastDiv.current.scrollIntoView({ behavior: "smooth" });
+    }
+  }, []);
+
+  
   return (
     <div>
       <div className="poppins-bold">
@@ -51,7 +61,7 @@ const Home = () => {
 
       <Reference />
 
-      <div className="w-screen h-[150px] bg-black"></div>
+      <div ref={lastDiv} className="w-screen h-[150px] bg-black"></div>
 
       <GetInTouch />
 

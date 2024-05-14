@@ -1,6 +1,3 @@
-import * as FAICONS from "react-icons/fa";
-import * as SIIcons from "react-icons/si";
-import * as RIIcons from "react-icons/ri";
 
 export const SkillsData = [
     {

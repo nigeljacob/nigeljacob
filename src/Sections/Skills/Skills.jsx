@@ -3,6 +3,7 @@ import React, { useEffect, useRef } from "react";
 import { SkillsData } from "./SkillsData";
 import SkillComponent from "../../Components/SkillComponent";
 import "./Skills.css";
+import { Link } from "react-router-dom";
 
 const Skills = () => {
   return (

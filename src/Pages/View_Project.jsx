@@ -10,6 +10,10 @@ const View_Project = (props) => {
   const location = useLocation();
   const state = location.state;
 
+  if(ProjectsData.find((item) => item.premalink === fileName) === undefined){
+    window.location.href = "/404"
+  }
+
   const [project, setProject] = useState(
     ProjectsData.find((item) => item.premalink === fileName)
   );

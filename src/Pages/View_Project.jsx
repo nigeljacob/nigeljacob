@@ -38,8 +38,8 @@ const View_Project = (props) => {
             HOME / {project.title}
           </h1>
           <div className="flex items-center">
-            <div className="flex-1">
-              <h1 className="poppins-extrabold text-[70px] text-[lightcoral] textSize flex-1">
+            <div className="flex-1 title">
+              <h1 className="poppins-extrabold text-[70px] text-[lightcoral] flex-1 max-w-[80%]">
                 {project.title}
                 <span className="text-[16px]">
                   {project.timeline.includes("Ongoing") ? (

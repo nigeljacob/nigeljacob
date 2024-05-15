@@ -1,3 +1,5 @@
+/* eslint-disable react/no-unescaped-entities */
+/* eslint-disable no-unused-vars */
 import React, { useEffect, useState, useRef } from "react";
 import { useInView } from "react-intersection-observer";
 import "./Description.css";

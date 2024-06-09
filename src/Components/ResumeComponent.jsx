@@ -25,6 +25,9 @@ const ResumeComponent = (props) => {
       borderCustom =
         "component rounded-[10px] p-[20px] bg-white w-[46%] mt-[30px] min-h-[250px] text-black relative";
       break;
+    case "Experience":
+      borderCustom ="component rounded-[10px] p-[20px] bg-white w-[46%] mt-[30px] min-h-[250px] text-black relative";
+      break;
     case "Education":
       borderCustom =
         "component rounded-[10px] p-[20px] bg-white w-[46%] mt-[30px] min-h-[250px] text-black relative";
@@ -111,14 +114,22 @@ const ResumeComponent = (props) => {
                 <div className="mt-[10px]">
                   <p className="mt-[5px] text-[23px] text-[#000040]">
                     {data.link === "" ? (
-                      <span className="font-bold">{data.title}</span>
+                      <div>
+                        <span className="font-bold">{data.title}</span>
+                        <br></br>
+                      </div>
                     ) : (
                       <a href={data.link}>
                         <span className="font-bold">{data.title}</span>
                       </a>
                     )}
                   </p>
-                  <p className="text-[#888888] text-[13px]">{data.timeline}</p>
+                  {data.position !== undefined && (
+                    <span className="font-bold opacity-[80%] text-[16px] mb-[10px]">
+                      {data.position}
+                    </span>
+                  )}
+                  <p className="text-[#888888] text-[13px] mt-[10px]">{data.timeline}</p>
                   {props.title === "References" ? (
                     <pre className="font-sans">{data.description}</pre>
                   ) : (
@@ -160,6 +171,11 @@ const ResumeComponent = (props) => {
                       </a>
                     )}
                   </p>
+                  {data.position !== undefined && (
+                    <span className="font-bold opacity-[80%] text-[16px] mb-[10px]">
+                      {data.position}
+                    </span>
+                  )}
                   <p className="text-[#888888] text-[13px]">{data.timeline}</p>
                   {props.title === "References" ? (
                     <pre className="font-sans">{data.description}</pre>

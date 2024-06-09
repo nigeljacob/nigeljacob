@@ -171,3 +171,7 @@ export const SkillsData = [
         ]
     }
 ];
+
+var hello = "hello"
+console.log(hello)
+

@@ -2,6 +2,7 @@ import SoftwareEngineer from "../../assets/Certifications/SoftwareEngineeringInt
 import React from "../../assets/Certifications/React.png"
 import Java from "../../assets/Certifications/Java.png"
 import Javascript from "../../assets/Certifications/Javascript.png"
+import Codesprint from "../../assets/Certifications/Codesprint.jpg"
 
 export const Certificates = [
     {
@@ -23,5 +24,10 @@ export const Certificates = [
         title: "Java Certified",
         image: Javascript,
         link: "https://www.hackerrank.com/certificates/cf7a31e1cab3"
+    }, 
+    {
+        title: "CODESPRINT - Certificate of Participation",
+        image: Codesprint,
+        link: "https://drive.google.com/file/d/13OHCVc0xFJ4-i2rumZOQr393DXhrn0qm/view?pli=1"
     }
 ]

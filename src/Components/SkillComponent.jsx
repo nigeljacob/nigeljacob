@@ -92,6 +92,8 @@ const SkillComponent = (props) => {
         return (
           <MDIcons.MdDesignServices className="icon text-[#3af5ff] bg-[#000000] rounded-[11px] p-[3px]" />
         );
+      case "PostgreSQL":
+        return <SIIcons.SiPostgresql className="icon text-[#336791]" />;
       default:
         return null;
     }

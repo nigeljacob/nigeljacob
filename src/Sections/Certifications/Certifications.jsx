@@ -2,7 +2,6 @@
 /* eslint-disable no-unused-vars */
 import React, { useState } from 'react'
 import { Certificates } from './Certificates';
-import { Link } from 'react-router-dom';
 import AnimateOnView from '../../Components/AnimateOnView';
 
 const Certifications = () => {
@@ -19,6 +18,7 @@ const Certifications = () => {
         </h3>
       </div>
 
+      <AnimateOnView >
       <div className="title m-auto projectsGridLayout mt-[30px] max-w-[80%] fadeIn">
         {Certificates.map((item, index) => {
           const [isHovering, setHovering] = useState(false);
@@ -36,8 +36,8 @@ const Certifications = () => {
             : "flex w-full h-full flex-col justify-center items-center animation";
 
           return (
-            <AnimateOnView key={index}>
               <div
+              key={index}
                 onMouseEnter={handleMouseEnter}
                 onMouseLeave={handleMouseLeave}
                 className="min-w-[250px] rounded-[20px] h-[150px] flex flex-col justify-center items-center parent bg-[#232323]"
@@ -65,10 +65,11 @@ const Certifications = () => {
                   </button>
                 )}
               </div>
-            </AnimateOnView>
+            
           );
         })}
       </div>
+      </AnimateOnView>
     </div>
   );
 }

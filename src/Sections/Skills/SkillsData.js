@@ -103,6 +103,10 @@ export const SkillsData = [
                     {
                         SkillName: "MongoDB",
                         Icon: "MongoDB"
+                    }, 
+                    {
+                        SkillName: "PostgreSQL",
+                        Icon: "PostgreSQL"
                     }
                 ]
             }, {

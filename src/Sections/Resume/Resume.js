@@ -54,6 +54,13 @@ export const ResumeData = [
     title: "Certifications",
     content: [
       {
+        title: "CODESPRINT - Certificate of Participation",
+        timeline: "2024",
+        description:
+          "Certificate of Participation for participating in Codesprint 8",
+        link: "https://drive.google.com/file/d/13OHCVc0xFJ4-i2rumZOQr393DXhrn0qm/view?pli=1"
+      },
+      {
         title: "Software Engineering Intern Certified",
         timeline: "2024",
         description:
@@ -88,16 +95,16 @@ export const ResumeData = [
     title: "Achievements & Compertitions",
     content: [
       {
-        title: "CODESPRINT 8",
-        timeline: "PRESENT",
-        description: "Participated at Codesprint 8 showcasing Project SYNK",
-        link: "",
-      },
-      {
         title: "MORA VENTURES 6.0 - UNIVERSITY OF MORATUWA STARTUP",
         timeline: "PRESENT",
         description:
           "Participated at Mora Ventures 6.0 8 showcasing Project SYNK",
+        link: "",
+      },
+      {
+        title: "CODESPRINT 8",
+        timeline: "2024",
+        description: "Participated at Codesprint 8 showcasing Project SYNK",
         link: "",
       },
       {

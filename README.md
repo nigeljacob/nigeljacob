@@ -5,7 +5,7 @@
 
 <p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=nigeljacob" alt="nigeljacob" /></a> </p>
 
-- 🔭 I’m currently working on [Spotify clone](https://github.com/nigeljacob/spotify)
+- 🔭 I’m currently working on [BlackBird - (Private Repository)](https://github.com/nigeljacob/blackbird)
 
 - 🌱 I’m currently learning **some new technologies and frameworks**
 

@@ -6,9 +6,7 @@ export const ResumeData = [
     title: "Summary",
     content: [
       "Name: Nigel Jacob",
-      "Age: 19",
-      "Location: Dehiwala, Sri Lanka",
-      "Email: nigeljacob245@gmail.com",
+      "Email: nigel.jacob@icloud.com | nigeljacob.dev@gmail.com",
     ],
   },
   {

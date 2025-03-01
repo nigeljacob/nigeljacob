@@ -41,7 +41,7 @@ const Home = () => {
       <div className="w-screen h-[400px] bg-black"></div>
       <div className="w-screen h-[400px] bg-black"></div>
       <div className="w-screen h-[400px] bg-black"></div>
-      <div className="w-screen h-[400px] bg-black"></div>
+      <div className="w-screen h-[200px] bg-black"></div>
 
 
       <Skills />

@@ -94,6 +94,8 @@ const SkillComponent = (props) => {
         );
       case "PostgreSQL":
         return <SIIcons.SiPostgresql className="icon text-[#336791]" />;
+      case "Fast":
+        return <SIIcons.SiFastapi className="icon text-[#009688]" />;
       default:
         return null;
     }

@@ -46,10 +46,10 @@ const Projects = () => {
               >
                 <div className={className}>
                   <div className="w-[60px] h-[60px] rounded-[10px] z-10">
-                    <img
+                    {item.image !== "" ? <img
                       src={item.image}
                       className="w-[60px] h-[60px] rounded-[10px] z-10"
-                    />
+                    /> : <div className="w-[60px] h-[60px] rounded-[10px] z-10 bg-[#000000] text-[10px] text-white flex items-center justify-center p-[10px]">Icon Pending</div>}
                   </div>
                   <h4 className="poppins-bold mt-[10px] text-[15px] z-10">
                     {item.title}

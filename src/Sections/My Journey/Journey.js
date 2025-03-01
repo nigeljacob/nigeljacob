@@ -13,7 +13,11 @@ export const JourneyData = [
         year: "2023"
     },
     {
-        description: "Completed Second Year of Bachelors at University of Westminster, took part in a number of compertitions. Started working as a Software Engineering Intern at Metana",
+        description: "Started working as a Software Engineering Intern at Metana",
         year: "2024"
-    }
+    },
+    {
+        description: "Building CodeMaxed and providing software solutions, mentoring future developers at Metana",
+        year: "2025"
+    },
 ]

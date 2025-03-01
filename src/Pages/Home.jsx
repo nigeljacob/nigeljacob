@@ -37,7 +37,12 @@ const Home = () => {
 
       <Description />
 
-      <div className="w-screen h-[200px] bg-black"></div>
+      <div className="w-screen h-[250px] bg-black"></div>
+      <div className="w-screen h-[400px] bg-black"></div>
+      <div className="w-screen h-[400px] bg-black"></div>
+      <div className="w-screen h-[400px] bg-black"></div>
+      <div className="w-screen h-[400px] bg-black"></div>
+
 
       <Skills />
 
@@ -65,7 +70,7 @@ const Home = () => {
 
       <GetInTouch />
 
-      <div className="w-screen h-[150px] bg-black"></div>
+      <div className="w-screen h-[300px] bg-black"></div>
 
       <div className="w-screen h-[100px] bg-[#000000] flex items-center justify-center ">
         <p>&copy; 2024 Nigel Jacob</p>

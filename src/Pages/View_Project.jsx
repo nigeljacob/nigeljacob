@@ -52,11 +52,10 @@ const View_Project = (props) => {
                 </span>
               </h1>
             </div>
-            <img
-              src={project.image}
-              alt=""
-              className="w-[70px] h-[70px] mr-[10px] rounded-[10px]"
-            />
+            {project.image !== "" ? <img
+                      src={project.image}
+                      className="w-[60px] h-[60px] rounded-[10px] z-10"
+                    /> : <div className="w-[60px] h-[60px] rounded-[10px] z-10 bg-[#000000] text-[10px] text-white flex items-center justify-center p-[10px]">Icon Pending</div>}
           </div>
         </div>
 

@@ -1,8 +1,8 @@
 export const Links = [
     {
         title:"Email",
-        link: "mailto:nigeljacob245@gmail.com",
-        text: "nigeljacob245@gmail.com"
+        link: "mailto:nigel.jacob@icloud.com",
+        text: "nigel.jacob@icloud.com"
     },
     {
         title:"Address",

@@ -4,7 +4,7 @@ import './Introduction.css'
 
 const Introduction = () => {
     const [nameOpacity, setNameOpacity] = useState(1);
-    const [nameScale, setNameScale] = useState(1);
+    const [nameScale, setNameScale] = useState(0.8);
 
     const [titleOpacity, setTitleOpacity] = useState(0);
     const [titleScale, setTitleScale] = useState(1);
@@ -13,17 +13,12 @@ const Introduction = () => {
         const handleScroll = () => {
         const maxScroll = document.body.clientHeight - window.innerHeight;
         const scrollFraction = window.scrollY / maxScroll;
-        const screenHeight = window.innerHeight;
 
         const hi = document.getElementById('hi');
-        const name = document.getElementById("name");
-        const title = document.getElementById("title");
-
-        const namePosition = name.getBoundingClientRect().top;
 
         if(1 - scrollFraction * 15 >= 0) {
-            setNameScale(1 + scrollFraction * 10);
-            setNameOpacity(1 - scrollFraction * 15);
+            setNameScale(0.8 + scrollFraction * 15);
+            setNameOpacity(1 - scrollFraction * 20);
             hi.style.opacity = 1;
 
         } else {
@@ -52,7 +47,7 @@ const Introduction = () => {
     <>
       <div className="flex flex-col justify-center items-center w-screen h-screen fixed z-[-1000]">
         <div className="w-fit">
-          <h3 id="hi">Hey There! This is</h3>
+          <h3 id="hi">Hey There! I am</h3>
         </div>
         <h1
           id="name"
@@ -68,7 +63,7 @@ const Introduction = () => {
           className="gochi-hand-regular"
           style={{ opacity: titleOpacity, transform: `scale(${titleScale})` }}
         >
-          Full Stack <br></br> Developer
+          A Full Stack <br></br> Developer
         </h1>
       </div>
     </>

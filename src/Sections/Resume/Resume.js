@@ -7,6 +7,8 @@ export const ResumeData = [
     content: [
       "Name: Nigel Jacob",
       "Email: nigel.jacob@icloud.com | nigeljacob.dev@gmail.com",
+      "Phone: +94 76 241 1294",
+      "Location: Colombo, Sri Lanka",
     ],
   },
   {
@@ -14,12 +16,31 @@ export const ResumeData = [
     title: "Experience",
     content: [
       {
+        title: "CodeMaxed",
+        link: "https://codemaxed.com/",
+        position: [{
+          title: "Co-Founder",
+          timeline: "2024 - PRESENT",
+          description:
+          "A software development company established with a group of three like-minded developers. Together, we work on a wide range of projects for clients, from web and mobile applications to custom software solutions. Our goal is to deliver high-quality, efficient, and user-friendly products that meet the specific needs of each client. I’m passionate about creating impactful technology that helps businesses succeed, and I’m excited to be part of a team that’s dedicated to pushing innovation forward.",
+        }],
+      },
+      {
         title: "Metana",
-        timeline: "2024 - PRESENT",
-        description:
-          "As a Software Engineering Intern at Metana, I will have the invaluable opportunity to collaborate closely with experienced professionals while delivering educational support and guidance to students enrolled in our bootcamps. This role offers me a unique platform to contribute to the development of the next generation of developers, all while fostering personal growth and continuous skill enhancement.",
         link: "https://metana.io/",
-        position: "Software Engineering Intern",
+        position: [
+          {
+            title: "Junior Student Success Instructor",
+            timeline: "February 2025 - PRESENT",
+            description: ""
+          },
+          {
+            title: "Student Success Instructor - Intern",
+            timeline: "May 2024 - February 2025",
+            description:
+          "As a Software Engineering Intern at Metana, I will have the invaluable opportunity to collaborate closely with experienced professionals while delivering educational support and guidance to students enrolled in our bootcamps. This role offers me a unique platform to contribute to the development of the next generation of developers, all while fostering personal growth and continuous skill enhancement.",
+          }
+        ],
       },
     ],
   },
@@ -29,15 +50,22 @@ export const ResumeData = [
     content: [
       {
         title: "University of Westminster",
-        timeline: "2022 - PRESENT",
+        timeline: "2022 - 2026",
         description:
-          "BENG (Hons) Software Engineering - Expected to graduate in 2026",
+          "BENG (Hons) Software Engineering",
+        link: "",
+      },
+      {
+        title: "Informatics Institute of Technology",
+        timeline: "2022",
+        description:
+          "Foundation in Software Engineering",
         link: "",
       },
       {
         title: "St Peter's College",
         timeline: "2011 - 2021",
-        description: "G.C.E O/L - Completed with 7A's and 2B's",
+        description: "G.C.E O/L",
         link: "",
       },
     ],

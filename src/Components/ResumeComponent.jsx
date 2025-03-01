@@ -126,7 +126,17 @@ const ResumeComponent = (props) => {
                   </p>
                   {data.position !== undefined && (
                     <span className="font-bold opacity-[80%] text-[16px] mb-[10px]">
-                      {data.position}
+                      {data.position.map((position, index) => {
+                        return (
+                          <div className="flex items-center mb-2">
+                              <div className="py-2">
+                                <h2>{position.title}</h2>
+                                <p className="text-[#A7A7A7] text-[10px]">{position.timeline}</p>
+                                {position.description !== "" && <p className="text-[12px] mt-2">{position.description}</p>}
+                              </div>
+                          </div>
+                        )
+                      })}
                     </span>
                   )}
                   <p className="text-[#888888] text-[13px] mt-[10px]">{data.timeline}</p>

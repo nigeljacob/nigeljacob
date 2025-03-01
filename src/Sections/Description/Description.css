@@ -1,83 +1,28 @@
-#aboutMeDesc{
-    width: 60%;
-    margin: auto;
-    height: 80vh;
-    font-size: 60px;
-    margin: auto;
-    font-weight: 600;
+.textContainer {
+    font-size: 1.8rem;
 }
 
-.scroll-reveal span {
-    opacity: 0.1;
-    transition: all 0.4s;
-    /* animation: scrollAnimation-on linear forwards;
-    animation-timeline: view(); */
-}
-
-/* #p1{
-    animation-range-start: 10vh;
-    animation-range-end: 50vh;
-}
-
-#p2{
-    animation-range-start: 40vh;
-    animation-range-end: 80vh;
-}
-
-#p3{
-    animation-range-start: 60vh;
-    animation-range-end: 100vh;
-}
-
-#p4{
-    animation-range-start: 90vh;
-    animation-range-end: 130vh;
-}
-
-#p5{
-    animation-range-start: 110vh;
-    animation-range-end: 150vh;
-} */
-
-
-
-@keyframes scrollAnimation-on {
-    0% {
-        color: hsla(0, 0%, 100%, 0.2); /* Starting color */
-    }
-    10% {
-        color: hsla(0, 0%, 100%, 1); /* Color change at mid-point */
-    }
-
-    70% {
-        color: hsla(0, 0%, 100%, 1); /* Color change at mid-point */
-    }
-    100% {
-        color: hsla(0, 0%, 100%, 0.2); /* Reverting back to gray */
-    }
-}
 
 @media screen and (min-width: 1920px){
-    #aboutMeDesc{
-        width: 40%;
+    .textContainer{
+        font-size: 1.8rem;
     }
 }
 
 @media screen and (max-width: 1000px){
-    #aboutMeDesc{
-        font-size: 43px;
+    .textContainer{
+        font-size: 1.5rem;
     }
 }
 
 @media screen and (max-width: 600px){
-    #aboutMeDesc{
-        font-size: 35px;
+    .textContainer{
+        font-size: 1.5rem;
     }
 }
 
 @media screen and (max-width: 400px){
-    #aboutMeDesc{
-        font-size: 30px;
-        text-align: center;
+    .textContainer{
+        font-size: 1.2rem;
     }
 }

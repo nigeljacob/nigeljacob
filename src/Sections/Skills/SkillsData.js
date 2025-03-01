@@ -79,6 +79,10 @@ export const SkillsData = [
                         Icon: "Flask"
                     },
                     {
+                        SkillName: "Fast",
+                        Icon: "Fast"
+                    },
+                    {
                         SkillName: "Go",
                         Icon: "Go"
                     }

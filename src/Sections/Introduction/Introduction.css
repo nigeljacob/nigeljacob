@@ -11,6 +11,9 @@
     typing 0.75s steps(90, end),
     blink-caret .75s step-end infinite;
     user-select: none;
+    font-size: 15px;
+    margin-bottom: -150px;
+    padding: 0px 10px;
     /* -webkit-animation: moveOut linear forwards;
     animation: moveOut linear forwards;
     animation-timeline: view();
@@ -24,6 +27,8 @@
     margin-top: 20px;
     text-align: center;
     user-select: none;
+    text-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+    
     /* -webkit-animation: scrollName linear forwards;
     animation: scrollName linear forwards;
     animation-timeline: view();

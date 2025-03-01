@@ -17,6 +17,103 @@ function App() {
 
   const [downloadProgress, setDownloadProgress] = useState(0);
   const [downloadComplete, setDownloadComplete] = useState(false);
+  const canvasRef = useRef(null);
+
+  useEffect(() => {
+    const canvas = canvasRef.current;
+    if (!canvas) return;
+
+    const ctx = canvas.getContext('2d');
+    if (!ctx) return;
+
+    // Set canvas dimensions to match window
+    const resizeCanvas = () => {
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+    };
+
+    resizeCanvas();
+    window.addEventListener('resize', resizeCanvas);
+
+    // Create blobs with slower movement speeds
+    const blobs = Array.from({ length: 8 }, () => ({
+      x: Math.random() * canvas.width,
+      y: Math.random() * canvas.height,
+      radius: Math.random() * 250 + 150,
+      xSpeed: (Math.random() - 0.5) * 0.4,
+      ySpeed: (Math.random() - 0.5) * 0.4,
+      hue: Math.random() * 360,
+      hueShift: Math.random() * 0.2 + 0.05,
+      opacity: Math.random() * 0.25 + 0.02,
+    }));
+
+    let lastTime = 0;
+    // Animation loop with time delta for smooth animation
+    const animate = (timestamp) => {
+      const deltaTime = timestamp - lastTime || 0;
+      lastTime = timestamp;
+      
+      // Clear canvas with black background
+      ctx.fillStyle = 'black';
+      ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+      // Draw blobs
+      blobs.forEach(blob => {
+        // Move blob with time-based movement
+        // Reduced movement speed by using a smaller multiplier (0.05 instead of 0.1)
+        blob.x += blob.xSpeed * (deltaTime * 0.5);
+        blob.y += blob.ySpeed * (deltaTime * 0.5);
+
+        // Shift hue over time for color cycling (slowed down)
+        blob.hue = (blob.hue + blob.hueShift * (deltaTime * 0.005)) % 360;
+        
+        // Bounce off edges with slight randomization
+        if (blob.x < -blob.radius || blob.x > canvas.width + blob.radius) {
+          blob.xSpeed *= -1;
+          // Add slight variation to speed after bounce
+          blob.xSpeed *= 0.95 + Math.random() * 0.1;
+        }
+        if (blob.y < -blob.radius || blob.y > canvas.height + blob.radius) {
+          blob.ySpeed *= -1;
+          // Add slight variation to speed after bounce
+          blob.ySpeed *= 0.95 + Math.random() * 0.1;
+        }
+
+        // Ensure blobs don't slow down too much (reduced minimum speed)
+        const minSpeed = 0.05;
+        if (Math.abs(blob.xSpeed) < minSpeed) {
+          blob.xSpeed = minSpeed * Math.sign(blob.xSpeed);
+        }
+        if (Math.abs(blob.ySpeed) < minSpeed) {
+          blob.ySpeed = minSpeed * Math.sign(blob.ySpeed);
+        }
+
+        // Draw blob with gradient
+        const gradient = ctx.createRadialGradient(
+          blob.x, blob.y, 0,
+          blob.x, blob.y, blob.radius
+        );
+        
+        // Create more vibrant gradients
+        gradient.addColorStop(0, `hsla(${blob.hue}, 100%, 70%, ${blob.opacity})`);
+        gradient.addColorStop(0.6, `hsla(${(blob.hue + 30) % 360}, 100%, 60%, ${blob.opacity * 0.6})`);
+        gradient.addColorStop(1, `hsla(${(blob.hue + 60) % 360}, 100%, 50%, 0)`);
+
+        ctx.fillStyle = gradient;
+        ctx.beginPath();
+        ctx.arc(blob.x, blob.y, blob.radius, 0, Math.PI * 2);
+        ctx.fill();
+      });
+
+      requestAnimationFrame(animate);
+    };
+
+    requestAnimationFrame(animate);
+
+    return () => {
+      window.removeEventListener('resize', resizeCanvas);
+    };
+  }, []);
 
   const handleDownload = () => {
     const xhr = new XMLHttpRequest();
@@ -52,17 +149,11 @@ function App() {
 
   return (
     <>
-      <div className="w-screen h-screen z-[-2000] fixed opacity-[100%] fade_in">
-        <video
-          autoPlay
-          muted
-          loop
-          playsInline
-          controls={false}
-          className="min-w-full min-h-full w-auto h-auto object-cover"
-        >
-          <source src={video} />
-        </video>
+      <div className="fixed top-0 left-0 w-full h-full z-[-1000]">
+        <canvas
+          ref={canvasRef}
+          className="absolute top-0 left-0 w-full h-full -z-20"
+        />
       </div>
       <BrowserRouter>
         <motion.div
@@ -118,12 +209,14 @@ function App() {
           </button>
         </motion.div>
 
-        <Routes>
-          <Route exact path="/" element={<Home />} />
-          <Route path="/:fileName" element={<View_Project />} />
-          <Route path="/404" element={<Error />} />
-          <Route path="/Skills/:skillName" element={<SkillProjects />} />
-        </Routes>
+        <div className="relative z-10 flex items-center justify-center min-h-screen">
+          <Routes>
+            <Route exact path="/" element={<Home />} />
+            <Route path="/:fileName" element={<View_Project />} />
+            <Route path="/404" element={<Error />} />
+            <Route path="/Skills/:skillName" element={<SkillProjects />} />
+          </Routes>
+        </div>
         <div ref={lastDiv}></div>
       </BrowserRouter>
     </>

@@ -132,7 +132,7 @@ const ResumeComponent = (props) => {
                               <div className="py-2">
                                 <h2>{position.title}</h2>
                                 <p className="text-[#A7A7A7] text-[10px]">{position.timeline}</p>
-                                {position.description !== "" && <p className="text-[12px] mt-2">{position.description}</p>}
+                                {position.description !== "" && <p className="text-[14px] mt-2">{position.description}</p>}
                               </div>
                           </div>
                         )

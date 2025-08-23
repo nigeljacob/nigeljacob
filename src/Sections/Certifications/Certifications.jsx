@@ -9,7 +9,7 @@ const Certifications = () => {
     <div className="w-screen h-fit bg-black flex flex-col justify-center">
       <div className="title m-auto">
         <h1 className="poppins-extrabold text-[70px] text-[lightcoral] textSize">
-          LICENSE & CERTIFICATIONS
+          CERTIFICATIONS
         </h1>
         <h3 className="text-[20px] mt-[5px]">
           As a student, I have made a lot of commitments to continuous learning

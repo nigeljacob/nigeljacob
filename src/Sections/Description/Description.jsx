@@ -34,14 +34,14 @@ const StickyScrollSection = () => {
     };
   }, []);
 
-  const text = `Currenlty building CodeMaxed, providing software solutions, and mentoring future developers at Metana; I love tackling real-world problems with code, pushing tech boundaries, and occasionally questioning my life choices at 2 AM. Let’s connect and build something amazing, hopefully with fewer bugs 🙌`;
+  const text = `🚀 I help businesses turn ideas into reliable, scalable software by building apps from the ground up, improving existing systems, and solving the messy problems that slow teams down. Alongside that, I mentor the next generation of developers at Metana. I love tackling real-world problems with code, exploring cutting-edge tech, and (occasionally) questioning my life choices at 2 AM. Let’s connect and build something amazing 🙌`;
 
   return (
     <section ref={sectionRef} className="max-h-screen max-w-screen h-screen w-screen flex items-center justify-center bg-black text-white">
       <div ref={textRef} className="font-bold w-[80%] m-auto leading-loose">
       {text.split(" ").map((word, i) => (
           <span key={i} className="word inline-block opacity-0 textContainer">
-            {word === "CodeMaxed," ? <a href="https://codemaxed.com" className="text-[cyan]">{word}&nbsp;</a> : word === "Metana;" ? <a href="https://metana.io" className="text-[#c6ff00]">{word}&nbsp;</a> : <p>{word}&nbsp;</p>}
+            {word.includes("Metana") ? <a href="https://metana.io" className="text-[#c6ff00]">{word}&nbsp;</a> : <p>{word}&nbsp;</p>}
           </span>
         ))}
       </div>

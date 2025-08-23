@@ -18,6 +18,10 @@ const SkillComponent = (props) => {
         return <FAICONS.FaHtml5 className="icon text-[#e34c26]" />;
       case "FaCss3":
         return <FAICONS.FaCss3 className="icon text-[#264de4]" />;
+      case "SiNextdotjs":
+        return <SIIcons.SiNextdotjs className="icon text-[#fff]" />;
+      case "SiElectron":
+        return <SIIcons.SiElectron className="icon text-[#47848f]" />;
       case "FaAngular":
         return <FAICONS.FaAngular className="icon text-[#A6120D]" />;
       case "FaAndroid":
@@ -28,6 +32,14 @@ const SkillComponent = (props) => {
         return <RIIcons.RiJavascriptFill className="icon text-[#f0db4f]" />;
       case "Node.js":
         return <FAICONS.FaNodeJs className="icon text-[#68A063]" />;
+      case "SiTypescript":
+        return <SIIcons.SiTypescript className="icon text-[#007acc]" />;
+      case "ASP.NET":
+        return <SIIcons.SiDotnet className="icon text-[#512BD4]" />;
+      case "C#":
+        return <SIIcons.SiCsharp className="icon text-[#239120]" />;
+      case "Supabase":
+        return <SIIcons.SiSupabase className="icon text-[#3ECF8E]" />;
       case "Python":
         return <FAICONS.FaPython className="icon text-[#FFE783]" />;
       case "Java":

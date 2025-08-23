@@ -7,6 +7,19 @@ import WHATZAPP from '../../assets/WHATZAPP.png'
 import VIBRATE from '../../assets/VIBRATE.jpeg'
 import REEL_TIMES from '../../assets/REEL TIMES.png'
 
+// CommandV
+import COMMANDV1 from '../../assets/COMMANDV/01.png';
+import COMMANDV2 from '../../assets/COMMANDV/02.png';
+import COMMANDV3 from '../../assets/COMMANDV/03.png';
+
+// Ordra
+import ORDRA1 from '../../assets/ORDRA/01.png';
+import ORDRA2 from '../../assets/ORDRA/02.png';
+import ORDRA3 from '../../assets/ORDRA/03.png';
+
+// Nova
+import NOVABLOCKCH01AIN from '../../assets/NOVA/01.png';
+
 // Virtual Theater
 import VIRTUALTHEATER1 from "../../assets/VIRTUAL THEATER/01.png"
 import VIRTUALTHEATER2 from "../../assets/VIRTUAL THEATER/02.png"
@@ -67,6 +80,50 @@ import REEL_TIMES3 from "../../assets/REEL TIMES/03.png"
 
 export const ProjectsData = [
    {
+      title: "Metana Platform",
+      premalink: "metana-platform",
+      timeline: "March 2025 - Ongoing",
+      description: "Metana Platform is an in-house Learning Management System (LMS) built to support students at Metana throughout their learning journey. I’ve been responsible for the entire frontend. Working on this project has been a great experience, it’s pushed me to solve real problems, improve how students and instructors interact with the platform, and turn complicated workflows into something simple and practical.",
+      link: "https://metana.io",
+      image: "https://rooster-prod-prod-core-bucket.s3.amazonaws.com/companyLogos/Metana-Logo.jpg_1658770078811",
+      images: [],
+      video: "",
+      tech: ["Next.js", "Supabase", "TanStack", "Tailwind CSS", "TypeScript"]
+   },
+   {
+      title: "CommandV",
+      premalink: "commandv",
+      timeline: "June 2025 - Ongoing",
+      description: "I built CommandV as a cross-platform app to make working across multiple devices feel seamless—almost like using a single machine, no matter the brand or ecosystem. It started from my own frustration with constantly switching between devices, so I designed it to let you share text, images, and files instantly, and even use a universal keyboard to type on any device without interruption.",
+      link: "https://commandv-website-git-main-nigel-jacobs-projects-51669159.vercel.app/",
+      image: "https://commandv-website-git-main-nigel-jacobs-projects-51669159.vercel.app/logo-invert.png",
+      images: [COMMANDV3, COMMANDV1, COMMANDV2],
+      video: "",
+      tech: ["React", "Electron", "Tailwind CSS", "TypeScript"]
+   },
+   {
+      title: "Nova Blockchain",
+      premalink: "nova-blockchain",
+      timeline: "July 2025 - Ongoing",
+      description: "I built Nova Blockchain to explore the potential of decentralized technology and create a platform where users truly control their digital assets. The goal was to make managing transactions, smart contracts, and dApps secure, transparent, and efficient. By designing a robust architecture and an innovative consensus mechanism, I wanted to empower users to take full control of their digital identities and interact with blockchain technology in a practical, user-friendly way.",
+      link: "",
+      image: "",
+      images: [NOVABLOCKCH01AIN],
+      video: "",
+      tech: ["React", "Go", "Tailwind CSS", "TypeScript"]
+   },
+   {
+      title: "Ordra",
+      premalink: "ordra",
+      timeline: "July 2025 - Ongoing",
+      description: "I built Ordra to help people organize their ideas, projects, and tasks in one place. The goal was to create an app that feels intuitive and flexible, letting users structure their work the way they want while keeping everything easy to access. I focused on building a smooth, responsive interface and features that make staying productive simple and enjoyable.",
+      link: "",
+      image: "",
+      images: [ORDRA3, ORDRA1, ORDRA2],
+      video: "",
+      tech: ["React", "Go", "Tailwind CSS", "TypeScript"]
+   },
+   {
       title: "Connections",
       premalink: "connections",
       timeline: "Jan 2024 - Ongoing",
@@ -76,6 +133,17 @@ export const ProjectsData = [
       images: [],
       video: "",
       tech: ["Flutter", "FastApi", "MySQL", "Python", "WebRTC"]
+   },
+   {
+      title: "PROJECT SYNK",
+      premalink: "project-synk",
+      timeline: "September 2023 - March 2024",
+      description: "A desktop application built using react combined with electron framework that would help team leaders and project managers to keep their team on track. Advanced progress tracking, file version tracking and real time progress provided by the application would enable a team leader to always know what the member is working on.",
+      link: "https://sites.google.com/view/synk/home?authuser=0",
+      image: PROJECTSYNK,
+      images: [PROJECTSYNK1, PROJECTSYNK2, PROJECTSYNK3, PROJECTSYNK4, PROJECTSYNK5, PROJECTSYNK6],
+      video: "https://www.youtube.com/embeded/JF-MRp2CAXY",
+      tech: ["React", "Electron Framework", "Firebase", "Node.js", "CSS", "Tailwind"]
    },
    {
       title: "CalPro",
@@ -119,17 +187,6 @@ export const ProjectsData = [
       image: "https://i.pinimg.com/originals/4b/ee/0a/4bee0a9f477906eb86399c83945deb47.jpg",
       images: [SPOTIFYCLONE1, SPOTIFYCLONE2, SPOTIFYCLONE3, SPOTIFYCLONE4, SPOTIFYCLONE5, SPOTIFYCLONE6],
       video: "",
-      tech: ["React", "Electron Framework", "Firebase", "Node.js", "CSS", "Tailwind"]
-   },
-   {
-      title: "PROJECT SYNK",
-      premalink: "project-synk",
-      timeline: "September 2023 - March 2024",
-      description: "A desktop application built using react combined with electron framework that would help team leaders and project managers to keep their team on track. Advanced progress tracking, file version tracking and real time progress provided by the application would enable a team leader to always know what the member is working on.",
-      link: "https://sites.google.com/view/synk/home?authuser=0",
-      image: PROJECTSYNK,
-      images: [PROJECTSYNK1, PROJECTSYNK2, PROJECTSYNK3, PROJECTSYNK4, PROJECTSYNK5, PROJECTSYNK6],
-      video: "https://www.youtube.com/embeded/JF-MRp2CAXY",
       tech: ["React", "Electron Framework", "Firebase", "Node.js", "CSS", "Tailwind"]
    },
    {

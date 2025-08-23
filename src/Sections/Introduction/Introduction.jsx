@@ -63,7 +63,7 @@ const Introduction = () => {
           className="gochi-hand-regular"
           style={{ opacity: titleOpacity, transform: `scale(${titleScale})` }}
         >
-          A Full Stack <br></br> Developer
+          A Web2 / Web3 Developer
         </h1>
       </div>
     </>

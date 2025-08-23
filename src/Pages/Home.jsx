@@ -42,19 +42,22 @@ const Home = () => {
       <div className="w-screen h-[400px] bg-black"></div>
       <div className="w-screen h-[400px] bg-black"></div>
       <div className="w-screen h-[200px] bg-black"></div>
+      <div className="w-screen h-[200px] bg-black"></div>
+      <div className="w-screen h-[200px] bg-black"></div>
 
 
       <Skills />
 
       <div className="w-screen h-[200px] bg-black"></div>
 
+      <Projects />
+
+      <div className="w-screen h-[150px] bg-black"></div>
+
       <ResumeSection />
 
       <div className="w-screen h-[200px] bg-black"></div>
 
-      <Projects />
-
-      <div className="w-screen h-[150px] bg-black"></div>
 
       <Certifications />
 

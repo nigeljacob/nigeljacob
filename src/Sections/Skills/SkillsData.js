@@ -10,6 +10,14 @@ export const SkillsData = [
                     Icon: "FaReact"
                 },
                 {
+                    SkillName: "Next.js",
+                    Icon: "SiNextdotjs"
+                },
+                {
+                    SkillName: "Electron",
+                    Icon: "SiElectron"
+                },
+                {
                     SkillName: "Flutter",
                     Icon: "SiFlutter"
                 },
@@ -30,6 +38,10 @@ export const SkillsData = [
                     Icon: "RiJavascriptFill"
                 },
                 {
+                    SkillName: "TypeScript",
+                    Icon: "SiTypescript"
+                },
+                {
                     SkillName: "Angular",
                     Icon: "FaAngular"
                 },
@@ -42,6 +54,34 @@ export const SkillsData = [
             {
                 setName: "Backend",
                 Skills: [
+                    {
+                        SkillName: "Spring Boot",
+                        Icon: "Spring Boot"
+                    },
+                    {
+                        SkillName: "Express.js",
+                        Icon: "Express"
+                    },
+                    {
+                        SkillName: "Flask",
+                        Icon: "Flask"
+                    },
+                    {
+                        SkillName: "Fast",
+                        Icon: "Fast"
+                    },
+                    {
+                        SkillName: "Go",
+                        Icon: "Go"
+                    },
+                    {
+                        SkillName: "ASP.NET",
+                        Icon: "ASP.NET"
+                    },
+                    {
+                        SkillName: "C#",
+                        Icon: "C#"
+                    },
                     {
                         SkillName: "Node.js",
                         Icon: "Node.js"
@@ -65,26 +105,6 @@ export const SkillsData = [
                     {
                         SkillName: "Kotlin",
                         Icon: "Kotlin"
-                    },
-                    {
-                        SkillName: "Spring Boot",
-                        Icon: "Spring Boot"
-                    },
-                    {
-                        SkillName: "Express.js",
-                        Icon: "Express"
-                    },
-                    {
-                        SkillName: "Flask",
-                        Icon: "Flask"
-                    },
-                    {
-                        SkillName: "Fast",
-                        Icon: "Fast"
-                    },
-                    {
-                        SkillName: "Go",
-                        Icon: "Go"
                     }
                 ]
             }, 
@@ -92,6 +112,10 @@ export const SkillsData = [
                 
                 setName: "Database",
                 Skills: [
+                    {
+                        SkillName: "Supabase",
+                        Icon: "Supabase"
+                    },
                     {
                         SkillName: "Firebase",
                         Icon: "Firebase"
@@ -145,7 +169,7 @@ export const SkillsData = [
         ],
         
     }, {
-        skillCategpry: "Soft Skills",
+        skillCategpry: "Other Skills",
         skillSet: [
             {
                 setName: "",
@@ -179,7 +203,4 @@ export const SkillsData = [
         ]
     }
 ];
-
-var hello = "hello"
-console.log(hello)
 

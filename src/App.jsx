@@ -164,7 +164,7 @@ function App() {
           initial="hidden"
           animate="visible"
           transition={{ duration: 0.7 }}
-          className="fixed top-0 right-0"
+          className="fixed top-0 right-0 z-20"
         >
           <button
             className="m-[20px] bg-[#39c4ab] px-[10px] py-[5px] rounded-[5px] text-[#000] float flex items-center"
@@ -191,7 +191,7 @@ function App() {
           initial="hidden"
           animate="visible"
           transition={{ duration: 0.7 }}
-          className="fixed bottom-0 right-0"
+          className="fixed bottom-0 right-0 z-20"
           onClick={(event) => {
             console.log(window.location.pathname);
             if (

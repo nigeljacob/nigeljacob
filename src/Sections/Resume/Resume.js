@@ -19,10 +19,20 @@ export const ResumeData = [
         title: "CodeMaxed",
         link: "https://codemaxed.com/",
         position: [{
-          title: "Co-Founder",
+          title: "CO-Founder",
           timeline: "2024 - PRESENT",
           description:
           "A software development company established with a group of three like-minded developers. Together, we work on a wide range of projects for clients, from web and mobile applications to custom software solutions. Our goal is to deliver high-quality, efficient, and user-friendly products that meet the specific needs of each client. I’m passionate about creating impactful technology that helps businesses succeed, and I’m excited to be part of a team that’s dedicated to pushing innovation forward.",
+        }],
+      },
+      {
+        title: "CommandV",
+        link: "https://commandv-website-git-main-nigel-jacobs-projects-51669159.vercel.app/",
+        position: [{
+          title: "Founder",
+          timeline: "2025 - PRESENT",
+          description:
+          "I created CommandV to simplify clipboard sharing across all devices and platforms. It lets users instantly sync text, images, and literally any file between computers and phones, boosting productivity and saving time. Built for anyone who wants seamless, cross-device workflow without hassle.",
         }],
       },
       {
@@ -30,7 +40,7 @@ export const ResumeData = [
         link: "https://metana.io/",
         position: [
           {
-            title: "Junior Student Success Instructor",
+            title: "Junior Student Success Instructor / Frontend Developer",
             timeline: "February 2025 - PRESENT",
             description: ""
           },

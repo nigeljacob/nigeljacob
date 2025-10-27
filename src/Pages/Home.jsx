@@ -76,7 +76,7 @@ const Home = () => {
       <div className="w-screen h-[300px] bg-black"></div>
 
       <div className="w-screen h-[100px] bg-[#000000] flex items-center justify-center ">
-        <p>&copy; 2024 Nigel Jacob</p>
+        <p>&copy; {new Date().getFullYear()} Nigel Jacob</p>
       </div>
     </div>
   );

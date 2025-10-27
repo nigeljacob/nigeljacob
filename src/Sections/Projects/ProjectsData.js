@@ -84,7 +84,7 @@ export const ProjectsData = [
       premalink: "metana-platform",
       timeline: "March 2025 - Ongoing",
       description: "Metana Platform is an in-house Learning Management System (LMS) built to support students at Metana throughout their learning journey. I’ve been responsible for the entire frontend. Working on this project has been a great experience, it’s pushed me to solve real problems, improve how students and instructors interact with the platform, and turn complicated workflows into something simple and practical.",
-      link: "https://metana.io",
+      link: "https://platform.metana.io/",
       image: "https://rooster-prod-prod-core-bucket.s3.amazonaws.com/companyLogos/Metana-Logo.jpg_1658770078811",
       images: [],
       video: "",

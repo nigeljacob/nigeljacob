@@ -1,23 +1,28 @@
 export const Links = [
     {
         title:"Email",
-        link: "mailto:nigel.jacob@icloud.com",
-        text: "nigel.jacob@icloud.com"
+        link: "mailto:nigel@nigeljacob.com",
+        text: "nigel@nigeljacob.com"
     },
     {
-        title:"Address",
-        link: "https://maps.app.goo.gl/TSufzmZcYQceXkdN9",
-        text: "Colombo, Sri Lanka"
+        title:"Website",
+        link: "https://nigeljacob.com",
+        text: "Open Website"
     },
     {
-        title:"Phone",
-        link: "tel:+94762411294",
-        text: "+94 76 241 1294"
+        title:"Medium",
+        link: "https://thenigeljacob.medium.com/",
+        text: "Open Medium Profile"
     },
     {
         title:"LinkedIn",
         link: "https://www.linkedin.com/in/nigel-jacob-28a41b295/",
         text: "Open LinkedIn Profile"
+    },
+    {
+        title:"X",
+        link: "https://x.com/thenigeljacob",
+        text: "Open X Profile"
     },
     {
         title:"GitHub",

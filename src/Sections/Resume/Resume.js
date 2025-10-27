@@ -6,8 +6,7 @@ export const ResumeData = [
     title: "Summary",
     content: [
       "Name: Nigel Jacob",
-      "Email: nigel.jacob@icloud.com | nigeljacob.dev@gmail.com",
-      "Phone: +94 76 241 1294",
+      "Email: nigel@nigeljacob.com",
       "Location: Colombo, Sri Lanka",
     ],
   },
@@ -15,6 +14,28 @@ export const ResumeData = [
     type: "section",
     title: "Experience",
     content: [
+      {
+        title: "Metana",
+        link: "https://metana.io/",
+        position: [
+          {
+            title: "Associate Software Engineer",
+            timeline: "September 2025 - PRESENT",
+            description: ""
+          },
+          {
+            title: "Junior Student Success Instructor / Frontend Developer",
+            timeline: "February 2025 - September 2025",
+            description: ""
+          },
+          {
+            title: "Student Success Instructor - Intern",
+            timeline: "May 2024 - February 2025",
+            description:
+          "As a Software Engineering Intern at Metana, I will have the invaluable opportunity to collaborate closely with experienced professionals while delivering educational support and guidance to students enrolled in our bootcamps. This role offers me a unique platform to contribute to the development of the next generation of developers, all while fostering personal growth and continuous skill enhancement.",
+          }
+        ],
+      },
       {
         title: "CodeMaxed",
         link: "https://codemaxed.com/",
@@ -34,23 +55,6 @@ export const ResumeData = [
           description:
           "I created CommandV to simplify clipboard sharing across all devices and platforms. It lets users instantly sync text, images, and literally any file between computers and phones, boosting productivity and saving time. Built for anyone who wants seamless, cross-device workflow without hassle.",
         }],
-      },
-      {
-        title: "Metana",
-        link: "https://metana.io/",
-        position: [
-          {
-            title: "Junior Student Success Instructor / Frontend Developer",
-            timeline: "February 2025 - PRESENT",
-            description: ""
-          },
-          {
-            title: "Student Success Instructor - Intern",
-            timeline: "May 2024 - February 2025",
-            description:
-          "As a Software Engineering Intern at Metana, I will have the invaluable opportunity to collaborate closely with experienced professionals while delivering educational support and guidance to students enrolled in our bootcamps. This role offers me a unique platform to contribute to the development of the next generation of developers, all while fostering personal growth and continuous skill enhancement.",
-          }
-        ],
       },
     ],
   },
@@ -177,10 +181,31 @@ export const ResumeData = [
     title: "Links",
     content: [
       {
+        title: "nigeljacob.com",
+        timeline: "",
+        description:
+          "Link to my Website",
+        link: "https://nigeljacob.com",
+      },
+      {
         title: "LinkedIn",
         timeline: "",
         description: "Link to my LinkedIn profile",
         link: "https://www.linkedin.com/in/nigel-jacob-28a41b295/",
+      },
+      {
+        title: "X",
+        timeline: "",
+        description:
+          "Link to my X Profile",
+        link: "https://x.com/thenigeljacob",
+      },
+      {
+        title: "Medium",
+        timeline: "",
+        description:
+          "Link to my Medium Profile",
+        link: "https://thenigeljacob.medium.com",
       },
       {
         title: "GITHUB",

@@ -1,7 +1,7 @@
 [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&duration=4000&pause=500&color=F7F7F7&width=700&lines=Hey+There+%F0%9F%91%8B%F0%9F%8F%BB;This+is+Nigel+Jacob;Welcome+to+My+GitHub+;I'm+glad+you're+here!+%F0%9F%8C%9F;Check+out+my+projects+and+feel+free+to+reach+out!+%F0%9F%9B%A0%EF%B8%8F;Let's+build+something+awesome+together!+%F0%9F%A4%96;Contact+me+for+collaboration+or+feedback!+%F0%9F%93%AC)](https://git.io/typing-svg)
 
 # 💫 About Me:
-🔭 I’m currently working on theconnectionssapp - (Private Repository)<br><br>🌱 I’m currently learning some new technologies and frameworks<br><br>👯 I have had great experience with Project SYNK<br><br>🤝 I am actively contributing to open-source projects.<br><br>👨‍💻 All of my projects are available at https://nigeljacob.netlify.app/<br><br>💬 Ask me about React, Android, Swift, Node.js, Java<br><br>📫 How to reach me nigeljacob.dev@gmail.com | nigel.jacob@icloud.com<br><br>📄 Know about my experiences https://nigeljacob.netlify.app/
+🔭 I’m currently working on theconnectionssapp - (Private Repository)<br><br>🌱 I’m currently learning some new technologies and frameworks<br><br>👯 I have had great experience with Project SYNK<br><br>🤝 I am actively contributing to open-source projects.<br><br>👨‍💻 All of my projects are available at https://nigeljacob.netlify.app/<br><br>💬 Ask me about React, Android, Swift, Node.js, Java<br><br>📫 How to reach me nigel@nigeljacob.com<br><br>📄 Know about my experiences https://portfolio.nigeljacob.com
 
 
 ## 🌐 Socials:
